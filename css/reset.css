@@ -29,18 +29,3 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-header {
-  background-image: url(../images/background/rsz_bay-1867798_2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 80vh; }
-
-container {
-  min-width: 1000px;
-  border: 1px solid #26E0DC; }
-
-div h1 {
-  color: #bdce80;
-  font-size: 40px; }
