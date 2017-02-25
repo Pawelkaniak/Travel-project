@@ -1,25 +1,62 @@
 // improts:
 @import "reset";
-
 // variables: 
-$main-color: #bdce80; 
-
+$main-colors: #7B68EE;
+$menu-colors: #FFFAFA;
 header {
-  background-image: url(../images/background/rsz_bay-1867798_2.png);
+  background-image: url(../images/background/beach-1853939_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 80vh;
+  //background-position: center;
+  
 }
 
-container {
-  min-width: 1000px;
-  border: 1px solid #26E0DC; 
+.container {
+  border: 1px solid #DC143C; 
+  margin: 0px auto;
+  width: 100%;
 }
 
-div {
-  h1 {
-    color: $main-color;
-    font-size: 40px;
+.main_width {
+  max-width: 1260px;
+  border: 1px solid blue;
+}
+
+.head_nav {
+  font-family: 'Crete Round', serif;
+
+
+  nav {
+    color: $menu-colors;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    li {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+  .logo_nav {
+    margin: 10px;
+    display: inline-block;
+    h1 {
+      color: $menu-colors;
+      font-size: 1.9em;
+    }
+  }
+  .account {
+    color: $menu-colors;
+    float: right;
+    margin: 15px 20px 20px 20px;
   }
 }
+.inscription{
+  position: relative;
+  p {
+    font-family: 'Dancing Script', cursive;
+    color: #696969;
+    font-size: 4.8em;
+    margin: 3.8em 3.8em 3.2em 5.5em;
+  }
+}
+
