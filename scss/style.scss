@@ -51,12 +51,13 @@ header {
   }
 }
 .inscription{
-  position: relative;
+  position: relative; 
   p {
     font-family: 'Dancing Script', cursive;
     color: #696969;
     font-size: 4.8em;
     margin: 3.8em 3.8em 3.2em 5.5em;
+    border: 1px solid black;
   }
 }
 
