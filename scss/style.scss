@@ -3,16 +3,33 @@
 // variables: 
 $main-colors: #7B68EE;
 $menu-colors: #FFFAFA;
+
+@mixin SearchEnginer-style {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  background-color: #009ac9;
+  border: 1px solid transparent;
+  input {
+    //padding-left: 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    width: 200px;
+    height: 2.6rem;
+  }
+}
+
+
 header {
   background-image: url(../images/background/beach-1853939_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   //background-position: center;
-  
 }
 
+// container and main widthraw.
 .container {
-  border: 1px solid #DC143C; 
+  //border: 1px solid #DC143C; 
   margin: 0px auto;
   width: 100%;
 }
@@ -24,8 +41,7 @@ header {
 
 .head_nav {
   font-family: 'Crete Round', serif;
-
-
+  // Logo, Navigation and login for account. 
   nav {
     color: $menu-colors;
     padding: 0px 0px 0px 0px;
@@ -48,16 +64,64 @@ header {
     color: $menu-colors;
     float: right;
     margin: 15px 20px 20px 20px;
+    border-bottom: 2px solid $menu-colors;
   }
 }
-.inscription{
-  position: relative; 
+
+.inscription {
+  position: relative;
   p {
     font-family: 'Dancing Script', cursive;
     color: #696969;
     font-size: 4.8em;
-    margin: 3.8em 3.8em 3.2em 5.5em;
+    margin: 3.8em 3.8em 1.5em 5.5em;
     border: 1px solid black;
+  }
+}
+
+// Travel oferts - search enginer 
+.search {
+  .form-section {
+    background: rgba(250, 250, 250, 0.3);
+    border-radius: 5px;
+    width: 100%;
+    .Where { 
+    @include SearchEnginer-style;
+  }
+  .check_in {
+    @include SearchEnginer-style;
+  }
+  .check_out {
+    @include SearchEnginer-style;
+  }
+  .Number_guests{
+    @include SearchEnginer-style;
+  }
+  .button_search {
+    //@include SearchEnginer-style;
+    display: inline-block;
+    .btn-default {
+      margin: 0 auto;
+      font-size: 1rem;
+      padding: 1rem 1rem;
+      display: block;
+      background-color: #009ac9;
+      border: 1px solid transparent;
+      border-radius: 15px;
+      color: #ffffff;
+      -webkit-border-radius: 18px;
+      border-radius: 18px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #ffffff;
+        color: #009ac9;
+        border-color: #009ac9;
+        border-radius: 25px;
+        }
+      }
+    }
   }
 }
 

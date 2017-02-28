@@ -36,7 +36,6 @@ header {
   background-size: cover; }
 
 .container {
-  border: 1px solid #DC143C;
   margin: 0px auto;
   width: 100%; }
 
@@ -63,7 +62,8 @@ header {
   .head_nav .account {
     color: #FFFAFA;
     float: right;
-    margin: 15px 20px 20px 20px; }
+    margin: 15px 20px 20px 20px;
+    border-bottom: 2px solid #FFFAFA; }
 
 .inscription {
   position: relative; }
@@ -71,5 +71,75 @@ header {
     font-family: 'Dancing Script', cursive;
     color: #696969;
     font-size: 4.8em;
-    margin: 3.8em 3.8em 3.2em 5.5em;
+    margin: 3.8em 3.8em 1.5em 5.5em;
     border: 1px solid black; }
+
+.search .form-section {
+  background: rgba(250, 250, 250, 0.3);
+  border-radius: 5px;
+  width: 100%; }
+  .search .form-section .Where {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    background-color: #009ac9;
+    border: 1px solid transparent; }
+    .search .form-section .Where input {
+      font-size: 1.5em;
+      border-radius: 10px;
+      width: 200px;
+      height: 2.6rem; }
+  .search .form-section .check_in {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    background-color: #009ac9;
+    border: 1px solid transparent; }
+    .search .form-section .check_in input {
+      font-size: 1.5em;
+      border-radius: 10px;
+      width: 200px;
+      height: 2.6rem; }
+  .search .form-section .check_out {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    background-color: #009ac9;
+    border: 1px solid transparent; }
+    .search .form-section .check_out input {
+      font-size: 1.5em;
+      border-radius: 10px;
+      width: 200px;
+      height: 2.6rem; }
+  .search .form-section .Number_guests {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    background-color: #009ac9;
+    border: 1px solid transparent; }
+    .search .form-section .Number_guests input {
+      font-size: 1.5em;
+      border-radius: 10px;
+      width: 200px;
+      height: 2.6rem; }
+  .search .form-section .button_search {
+    display: inline-block; }
+    .search .form-section .button_search .btn-default {
+      margin: 0 auto;
+      font-size: 1rem;
+      padding: 1rem 1rem;
+      display: block;
+      background-color: #009ac9;
+      border: 1px solid transparent;
+      border-radius: 15px;
+      color: #ffffff;
+      -webkit-border-radius: 18px;
+      border-radius: 18px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      .search .form-section .button_search .btn-default:hover {
+        background-color: #ffffff;
+        color: #009ac9;
+        border-color: #009ac9;
+        border-radius: 25px; }
