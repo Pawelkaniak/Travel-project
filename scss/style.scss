@@ -3,7 +3,6 @@
 // variables: 
 $main-colors: #7B68EE;
 $menu-colors: #FFFAFA;
-
 @mixin SearchEnginer-style {
   display: inline-block;
   //font-size: 1.1rem;
@@ -13,24 +12,22 @@ $menu-colors: #FFFAFA;
   input {
     padding-left: 15px;
     font-size: 1.2em;
-    border-radius: 0px;
-    height: 2.4rem;
+    height: 2.8rem;
   }
 }
 
-@mixin clearfix{
+@mixin clearfix {
   &:before {
     content: "";
     display: table;
     clear: both;
   }
-  &:after{
-    content:  "";
+  &:after {
+    content: "";
     display: table;
     clear: both;
   }
 }
-
 
 header {
   background-image: url(../images/background/beach-1853939_2.jpg);
@@ -69,7 +66,7 @@ header {
     display: inline-block;
     h1 {
       color: $menu-colors;
-      font-size: 1.9em;
+      font-size: 2em;
     }
   }
   .account {
@@ -84,9 +81,9 @@ header {
   position: relative;
   p {
     font-family: 'Dancing Script', cursive;
-    color: black;
+    color: $menu-colors;
     font-size: 4.8em;
-    margin: 2.8em 3.8em 1.4em 5.5em;
+    margin: 2.8em 3.8em 1.6em 5.5em;
     //border: 1px solid black;
   }
 }
@@ -96,68 +93,64 @@ header {
   //background: rgba(250, 250, 250, 0.3);
   border-radius: 5px;
   width: 100%;
-  margin-bottom: 150px;
+  padding-bottom: 120px;
   .form-section {
     margin-left: 170px;
-    .Where { 
-    @include SearchEnginer-style;
-    float: left;
-    padding: 6px;
-  }
-  .check_in {
-    @include SearchEnginer-style;
-    float: left;
-    padding: 5px;
+    .Where {
+      @include SearchEnginer-style;
+      float: left;
+      padding: 8px;
+    }
+    .check_in {
+      @include SearchEnginer-style;
+      float: left;
+      padding: 8px;
       input {
-      width: 6em;
+        width: 6em;
+      }
     }
-  }
-  .check_out {
-    @include SearchEnginer-style;
-    float: left;
-    padding: 5px;
-    input {
-      width: 6em;
+    .check_out {
+      @include SearchEnginer-style;
+      float: left;
+      padding: 8px;
+      input {
+        width: 6em;
+      }
     }
-  }
-  .Number_guests{
-    @include SearchEnginer-style;
-    float: left;
-    padding: 5px;
-    .form-control {
-      width: 140px;
-      height: 46px;
-      font-size: 1em;
+    .Number_guests {
+      @include SearchEnginer-style;
+      float: left;
+      padding: 10px;
+      .form-control {
+        width: 140px;
+        height: 46px;
+        font-size: 1em;
+      }
     }
-  }
-  .button_search {
-    //margin-left: 6px;
-    display: inline-block;
-    .btn-default {
-      margin: 0 auto;
-      font-size: 1rem;
-      padding: 1.15rem 2rem;
-      display: block;
-      background-color: #009ac9;
-      border: 2px solid transparent;
-      //border-radius: 15px;
-      color: #ffffff;
-      //-webkit-border-radius: 18px;
-      //border-radius: 18px;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        background-color: #ffffff;
-        color: #009ac9;
-        border-color: #009ac9;
-        //border-radius: 25px;
+    .button_search {
+      display: inline-block;
+      .btn-default {
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 1.45rem 2rem;
+        display: block;
+        background-color: #009ac9;
+        border: 2px solid transparent;
+        color: #ffffff;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: #ffffff;
+          color: #009ac9;
+          border-color: #009ac9;
         }
       }
     }
   }
 }
-.input-group-addon{
+
+.input-group-addon {
   img {
     width: 30px;
   }

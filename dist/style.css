@@ -57,7 +57,7 @@ header {
     display: inline-block; }
     .head_nav .logo_nav h1 {
       color: #FFFAFA;
-      font-size: 1.9em; }
+      font-size: 2em; }
   .head_nav .account {
     color: #FFFAFA;
     float: right;
@@ -68,14 +68,14 @@ header {
   position: relative; }
   .inscription p {
     font-family: 'Dancing Script', cursive;
-    color: black;
+    color: #FFFAFA;
     font-size: 4.8em;
-    margin: 2.8em 3.8em 1.4em 5.5em; }
+    margin: 2.8em 3.8em 1.6em 5.5em; }
 
 .search {
   border-radius: 5px;
   width: 100%;
-  margin-bottom: 150px; }
+  padding-bottom: 120px; }
   .search .form-section {
     margin-left: 170px; }
     .search .form-section .Where {
@@ -83,23 +83,21 @@ header {
       background-color: #009ac9;
       border: 1px solid transparent;
       float: left;
-      padding: 6px; }
+      padding: 8px; }
       .search .form-section .Where input {
         padding-left: 15px;
         font-size: 1.2em;
-        border-radius: 0px;
-        height: 2.4rem; }
+        height: 2.8rem; }
     .search .form-section .check_in {
       display: inline-block;
       background-color: #009ac9;
       border: 1px solid transparent;
       float: left;
-      padding: 5px; }
+      padding: 8px; }
       .search .form-section .check_in input {
         padding-left: 15px;
         font-size: 1.2em;
-        border-radius: 0px;
-        height: 2.4rem; }
+        height: 2.8rem; }
       .search .form-section .check_in input {
         width: 6em; }
     .search .form-section .check_out {
@@ -107,12 +105,11 @@ header {
       background-color: #009ac9;
       border: 1px solid transparent;
       float: left;
-      padding: 5px; }
+      padding: 8px; }
       .search .form-section .check_out input {
         padding-left: 15px;
         font-size: 1.2em;
-        border-radius: 0px;
-        height: 2.4rem; }
+        height: 2.8rem; }
       .search .form-section .check_out input {
         width: 6em; }
     .search .form-section .Number_guests {
@@ -120,12 +117,11 @@ header {
       background-color: #009ac9;
       border: 1px solid transparent;
       float: left;
-      padding: 5px; }
+      padding: 10px; }
       .search .form-section .Number_guests input {
         padding-left: 15px;
         font-size: 1.2em;
-        border-radius: 0px;
-        height: 2.4rem; }
+        height: 2.8rem; }
       .search .form-section .Number_guests .form-control {
         width: 140px;
         height: 46px;
@@ -135,7 +131,7 @@ header {
       .search .form-section .button_search .btn-default {
         margin: 0 auto;
         font-size: 1rem;
-        padding: 1.15rem 2rem;
+        padding: 1.45rem 2rem;
         display: block;
         background-color: #009ac9;
         border: 2px solid transparent;
