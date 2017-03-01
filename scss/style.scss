@@ -6,16 +6,28 @@ $menu-colors: #FFFAFA;
 
 @mixin SearchEnginer-style {
   display: inline-block;
-  font-size: 1rem;
-  padding: 1rem 1rem;
+  //font-size: 1.1rem;
+  //padding-top: 1em;
   background-color: #009ac9;
   border: 1px solid transparent;
   input {
-    //padding-left: 15px;
-    font-size: 1.5em;
-    border-radius: 10px;
-    width: 200px;
-    height: 2.6rem;
+    padding-left: 15px;
+    font-size: 1.2em;
+    border-radius: 0px;
+    height: 2.4rem;
+  }
+}
+
+@mixin clearfix{
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &:after{
+    content:  "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -36,7 +48,7 @@ header {
 
 .main_width {
   max-width: 1260px;
-  border: 1px solid blue;
+  //border: 1px solid blue;
 }
 
 .head_nav {
@@ -72,45 +84,66 @@ header {
   position: relative;
   p {
     font-family: 'Dancing Script', cursive;
-    color: #696969;
+    color: black;
     font-size: 4.8em;
-    margin: 3.8em 3.8em 1.5em 5.5em;
-    border: 1px solid black;
+    margin: 2.8em 3.8em 1.4em 5.5em;
+    //border: 1px solid black;
   }
 }
 
 // Travel oferts - search enginer 
 .search {
+  //background: rgba(250, 250, 250, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 150px;
   .form-section {
-    background: rgba(250, 250, 250, 0.3);
-    border-radius: 5px;
-    width: 100%;
+    margin-left: 170px;
     .Where { 
     @include SearchEnginer-style;
+    float: left;
+    padding: 6px;
   }
   .check_in {
     @include SearchEnginer-style;
+    float: left;
+    padding: 5px;
+      input {
+      width: 6em;
+    }
   }
   .check_out {
     @include SearchEnginer-style;
+    float: left;
+    padding: 5px;
+    input {
+      width: 6em;
+    }
   }
   .Number_guests{
     @include SearchEnginer-style;
+    float: left;
+    padding: 5px;
+    .form-control {
+      width: 140px;
+      height: 46px;
+      font-size: 1em;
+    }
   }
   .button_search {
-    //@include SearchEnginer-style;
+    //margin-left: 6px;
     display: inline-block;
     .btn-default {
       margin: 0 auto;
       font-size: 1rem;
-      padding: 1rem 1rem;
+      padding: 1.15rem 2rem;
       display: block;
       background-color: #009ac9;
-      border: 1px solid transparent;
-      border-radius: 15px;
+      border: 2px solid transparent;
+      //border-radius: 15px;
       color: #ffffff;
-      -webkit-border-radius: 18px;
-      border-radius: 18px;
+      //-webkit-border-radius: 18px;
+      //border-radius: 18px;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
@@ -118,10 +151,14 @@ header {
         background-color: #ffffff;
         color: #009ac9;
         border-color: #009ac9;
-        border-radius: 25px;
+        //border-radius: 25px;
         }
       }
     }
   }
 }
-
+.input-group-addon{
+  img {
+    width: 30px;
+  }
+}
