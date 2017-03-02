@@ -31,7 +31,7 @@ table {
   border-spacing: 0; }
 
 header {
-  background-image: url(../images/background/beach-1853939_2.jpg);
+  background-image: url(../images/background/colosseum-1799672_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -39,30 +39,37 @@ header {
   margin: 0px auto;
   width: 100%; }
 
+.clearfix {
+  content: '';
+  display: block;
+  clear: both; }
+
 .main_width {
   max-width: 1260px; }
 
 .head_nav {
+  width: 100%;
   font-family: 'Crete Round', serif; }
   .head_nav nav {
+    display: inline-block;
     color: #FFFAFA;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    display: inline-block; }
+    padding: 20px 5px 5px 5px;
+    font-size: 1.1em; }
     .head_nav nav li {
       display: inline-block;
-      padding: 10px; }
-  .head_nav .logo_nav {
-    margin: 10px;
-    display: inline-block; }
-    .head_nav .logo_nav h1 {
+      padding: 0px 10px 0px 5px; }
+  .head_nav .logo {
+    display: inline-block;
+    margin: 10px; }
+    .head_nav .logo h1 {
       color: #FFFAFA;
-      font-size: 2em; }
+      font-size: 2.6em;
+      font-family: 'Indie Flower', cursive; }
   .head_nav .account {
     color: #FFFAFA;
     float: right;
-    margin: 15px 20px 20px 20px;
-    border-bottom: 2px solid #FFFAFA; }
+    margin: 20px 20px 20px 20px;
+    font-size: 1.2em; }
 
 .inscription {
   position: relative; }
@@ -70,17 +77,17 @@ header {
     font-family: 'Dancing Script', cursive;
     color: #FFFAFA;
     font-size: 4.8em;
-    margin: 2.8em 3.8em 1.6em 5.5em; }
+    margin: 2.8em 3.8em 1.4em 5.5em; }
 
 .search {
   border-radius: 5px;
   width: 100%;
   padding-bottom: 120px; }
   .search .form-section {
-    margin-left: 170px; }
+    margin-left: 125px; }
     .search .form-section .Where {
       display: inline-block;
-      background-color: #009ac9;
+      background-color: #ebebeb;
       border: 1px solid transparent;
       float: left;
       padding: 8px; }
@@ -90,31 +97,46 @@ header {
         height: 2.8rem; }
     .search .form-section .check_in {
       display: inline-block;
-      background-color: #009ac9;
+      display: inline-block;
+      background-color: #ebebeb;
       border: 1px solid transparent;
       float: left;
-      padding: 8px; }
+      padding: 8px;
+      width: 17%; }
       .search .form-section .check_in input {
         padding-left: 15px;
         font-size: 1.2em;
         height: 2.8rem; }
       .search .form-section .check_in input {
-        width: 6em; }
+        width: 6em;
+        float: left;
+        font-family: "Lato", sans-serif; }
+      .search .form-section .check_in .input-group-addon > img {
+        width: 40px;
+        float: right;
+        padding: 4px; }
     .search .form-section .check_out {
       display: inline-block;
-      background-color: #009ac9;
+      background-color: #ebebeb;
       border: 1px solid transparent;
       float: left;
-      padding: 8px; }
+      padding: 8px;
+      width: 17%; }
       .search .form-section .check_out input {
         padding-left: 15px;
         font-size: 1.2em;
         height: 2.8rem; }
       .search .form-section .check_out input {
-        width: 6em; }
+        width: 6em;
+        float: left;
+        font-family: "Lato", sans-serif; }
+      .search .form-section .check_out .input-group-addon > img {
+        width: 40px;
+        float: right;
+        padding: 4px; }
     .search .form-section .Number_guests {
       display: inline-block;
-      background-color: #009ac9;
+      background-color: #ebebeb;
       border: 1px solid transparent;
       float: left;
       padding: 10px; }
@@ -125,7 +147,8 @@ header {
       .search .form-section .Number_guests .form-control {
         width: 140px;
         height: 46px;
-        font-size: 1em; }
+        font-size: 1em;
+        font-family: "Lato", sans-serif; }
     .search .form-section .button_search {
       display: inline-block; }
       .search .form-section .button_search .btn-default {
@@ -133,16 +156,51 @@ header {
         font-size: 1rem;
         padding: 1.45rem 2rem;
         display: block;
-        background-color: #009ac9;
+        background-color: #5634d1;
         border: 2px solid transparent;
         color: #ffffff;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
         .search .form-section .button_search .btn-default:hover {
-          background-color: #ffffff;
-          color: #009ac9;
-          border-color: #009ac9; }
+          background-color: #ebebeb;
+          color: #5634d1;
+          border-color: #5634d1; }
 
-.input-group-addon img {
-  width: 30px; }
+.prospect {
+  border: 1px solid red;
+  margin-top: 20px; }
+  .prospect .first_proposal {
+    display: inline-block;
+    width: 33%; }
+    .prospect .first_proposal :nth-child(n) {
+      text-align: center;
+      padding: 10px; }
+      .prospect .first_proposal :nth-child(n) h2 {
+        font-size: 2em;
+        color: #5634d1; }
+  .prospect .second_proposal {
+    display: inline-block;
+    width: 33%; }
+    .prospect .second_proposal :nth-child(n) {
+      text-align: center;
+      padding: 10px; }
+      .prospect .second_proposal :nth-child(n) h2 {
+        font-size: 2em;
+        color: #5634d1; }
+  .prospect .third_proposal {
+    display: inline-block;
+    width: 33%; }
+    .prospect .third_proposal :nth-child(n) {
+      text-align: center;
+      padding: 10px; }
+      .prospect .third_proposal :nth-child(n) h2 {
+        font-size: 2em;
+        color: #5634d1; }
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  margin: 0 auto; }

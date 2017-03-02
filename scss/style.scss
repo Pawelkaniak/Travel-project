@@ -1,13 +1,15 @@
 // improts:
 @import "reset";
 // variables: 
-$main-colors: #7B68EE;
+$font-inputs: 'Lato', sans-serif;
+$main-colors: rgb(235,235,235);
 $menu-colors: #FFFAFA;
+$btn-colors: rgb(86, 52, 209); //rgb(86, 52, 209); rgb(99,230,233);
 @mixin SearchEnginer-style {
   display: inline-block;
   //font-size: 1.1rem;
   //padding-top: 1em;
-  background-color: #009ac9;
+  background-color: $main-colors;
   border: 1px solid transparent;
   input {
     padding-left: 15px;
@@ -30,7 +32,7 @@ $menu-colors: #FFFAFA;
 }
 
 header {
-  background-image: url(../images/background/beach-1853939_2.jpg);
+  background-image: url(../images/background/colosseum-1799672_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   //background-position: center;
@@ -38,9 +40,15 @@ header {
 
 // container and main widthraw.
 .container {
-  //border: 1px solid #DC143C; 
+  //: 1px solid #DC143C; 
   margin: 0px auto;
   width: 100%;
+}
+
+.clearfix {
+  content:'';
+  display:block;
+  clear:both;
 }
 
 .main_width {
@@ -49,31 +57,40 @@ header {
 }
 
 .head_nav {
+  width: 100%;
   font-family: 'Crete Round', serif;
+  //display: inline-block;
+  //background-color: rgb(99,230,233);
+  
+  
   // Logo, Navigation and login for account. 
   nav {
-    color: $menu-colors;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
     display: inline-block;
+    //float: left;
+    color: $menu-colors;
+    //margin: 5px 0px 0px 15px;
+    padding: 20px 5px 5px 5px;
+    font-size: 1.1em;
     li {
       display: inline-block;
-      padding: 10px;
+      padding: 0px 10px 0px 5px;
     }
   }
-  .logo_nav {
-    margin: 10px;
+  .logo {
     display: inline-block;
+    margin: 10px;
     h1 {
       color: $menu-colors;
-      font-size: 2em;
+      font-size: 2.6em;
+      font-family: 'Indie Flower', cursive;
+
     }
   }
   .account {
     color: $menu-colors;
     float: right;
-    margin: 15px 20px 20px 20px;
-    border-bottom: 2px solid $menu-colors;
+    margin: 20px 20px 20px 20px;
+    font-size: 1.2em;
   }
 }
 
@@ -83,7 +100,7 @@ header {
     font-family: 'Dancing Script', cursive;
     color: $menu-colors;
     font-size: 4.8em;
-    margin: 2.8em 3.8em 1.6em 5.5em;
+    margin: 2.8em 3.8em 1.4em 5.5em;
     //border: 1px solid black;
   }
 }
@@ -95,27 +112,45 @@ header {
   width: 100%;
   padding-bottom: 120px;
   .form-section {
-    margin-left: 170px;
+    margin-left: 125px;
     .Where {
       @include SearchEnginer-style;
       float: left;
       padding: 8px;
     }
     .check_in {
+      display: inline-block;
       @include SearchEnginer-style;
       float: left;
       padding: 8px;
+      width: 17%;
       input {
         width: 6em;
+        float: left;
+        font-family: $font-inputs;
+
+      }
+      .input-group-addon > img {
+        width: 40px;
+        float: right;
+        padding: 4px;
       }
     }
     .check_out {
       @include SearchEnginer-style;
       float: left;
       padding: 8px;
+      width: 17%;
       input {
         width: 6em;
+        float: left;
+        font-family: $font-inputs;
+
       }
+      .input-group-addon > img {
+        width: 40px;
+        float: right;
+        padding: 4px;      }
     }
     .Number_guests {
       @include SearchEnginer-style;
@@ -125,6 +160,7 @@ header {
         width: 140px;
         height: 46px;
         font-size: 1em;
+        font-family: $font-inputs;
       }
     }
     .button_search {
@@ -134,24 +170,60 @@ header {
         font-size: 1rem;
         padding: 1.45rem 2rem;
         display: block;
-        background-color: #009ac9;
+        background-color: $btn-colors;
         border: 2px solid transparent;
         color: #ffffff;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         &:hover {
-          background-color: #ffffff;
-          color: #009ac9;
-          border-color: #009ac9;
+          background-color: $main-colors;
+          color: $btn-colors;
+            border-color: $btn-colors;
         }
       }
     }
   }
 }
 
-.input-group-addon {
-  img {
-    width: 30px;
+.landing_page {
+  //background-color: rgb(99,230,233);
+  //height: 40vh;
+  //border: 4px solid rgb(99,230,233);
+}
+
+@mixin CirclePhotosText {
+  display: inline-block;
+  width: 33%; 
+  :nth-child(n){
+    text-align: center;
+    padding: 10px;
+    h2 {
+      font-size: 2em;
+      color: $btn-colors;
+    }
   }
+}
+
+.prospect {
+  border: 1px solid red;
+  margin-top: 20px;
+  .first_proposal{
+  @include CirclePhotosText;
+  }
+  .second_proposal {
+  @include CirclePhotosText;
+  } 
+  .third_proposal {
+  @include CirclePhotosText;
+  }
+}
+
+
+.circle { 
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  margin: 0 auto;
 }
