@@ -49,7 +49,8 @@ header {
 
 .head_nav {
   width: 100%;
-  font-family: 'Crete Round', serif; }
+  font-family: 'Crete Round', serif;
+  border-radius: 25%; }
   .head_nav nav {
     display: inline-block;
     color: #FFFAFA;
@@ -70,19 +71,23 @@ header {
     float: right;
     margin: 20px 20px 20px 20px;
     font-size: 1.2em; }
+    .head_nav .account img {
+      padding-right: 6px;
+      width: 20px;
+      height: 20px; }
 
 .inscription {
   position: relative; }
   .inscription p {
     font-family: 'Dancing Script', cursive;
-    color: #FFFAFA;
+    color: #ebebeb;
     font-size: 4.8em;
-    margin: 2.8em 3.8em 1.4em 5.5em; }
+    margin: 2.8em 0em 1.4em 5.5em; }
 
 .search {
   border-radius: 5px;
   width: 100%;
-  padding-bottom: 120px; }
+  padding-bottom: 140px; }
   .search .form-section {
     margin-left: 125px; }
     .search .form-section .Where {
@@ -156,51 +161,102 @@ header {
         font-size: 1rem;
         padding: 1.45rem 2rem;
         display: block;
-        background-color: #5634d1;
+        background-color: #5843d2;
         border: 2px solid transparent;
         color: #ffffff;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
         .search .form-section .button_search .btn-default:hover {
           background-color: #ebebeb;
-          color: #5634d1;
-          border-color: #5634d1; }
+          color: #5843d2;
+          border-color: #5843d2; }
 
+/*PROSPECT SECTION*/
 .prospect {
-  border: 1px solid red;
-  margin-top: 20px; }
+  margin-top: 60px;
+  padding-top: 20px; }
   .prospect .first_proposal {
     display: inline-block;
     width: 33%; }
-    .prospect .first_proposal :nth-child(n) {
+    .prospect .first_proposal .circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      margin: 0 auto;
+      cursor: default;
+      box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease-in-out; }
+    .prospect .first_proposal :nth-child(n+2) {
       text-align: center;
       padding: 10px; }
-      .prospect .first_proposal :nth-child(n) h2 {
+      .prospect .first_proposal :nth-child(n+2) h2 {
         font-size: 2em;
-        color: #5634d1; }
+        color: #5843d2; }
   .prospect .second_proposal {
     display: inline-block;
     width: 33%; }
-    .prospect .second_proposal :nth-child(n) {
+    .prospect .second_proposal .circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      margin: 0 auto;
+      cursor: default;
+      box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease-in-out; }
+    .prospect .second_proposal :nth-child(n+2) {
       text-align: center;
       padding: 10px; }
-      .prospect .second_proposal :nth-child(n) h2 {
+      .prospect .second_proposal :nth-child(n+2) h2 {
         font-size: 2em;
-        color: #5634d1; }
+        color: #5843d2; }
   .prospect .third_proposal {
     display: inline-block;
     width: 33%; }
-    .prospect .third_proposal :nth-child(n) {
+    .prospect .third_proposal .circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      margin: 0 auto;
+      cursor: default;
+      box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease-in-out; }
+    .prospect .third_proposal :nth-child(n+2) {
       text-align: center;
       padding: 10px; }
-      .prospect .third_proposal :nth-child(n) h2 {
+      .prospect .third_proposal :nth-child(n+2) h2 {
         font-size: 2em;
-        color: #5634d1; }
+        color: #5843d2; }
 
-.circle {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 1px solid blue;
-  margin: 0 auto; }
+.circl-info {
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; }
+  .circl-info h3 {
+    padding: 90px 0px 0px 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 22px; }
+  .circl-info p {
+    font-size: 18px;
+    color: white;
+    font-weight: 700; }
+  .circl-info a {
+    display: block;
+    margin: 0 auto; }
+
+.circl-img1 {
+  background-image: url(../images/circle/2e9e5277066cae3feb8c8ea29aa7998c.jpg); }
+
+.circl-img2 {
+  background-image: url(../images/circle/9a572519ba7395c6c72a74874dd5c375.jpg); }
+
+.circl-img3 {
+  background-image: url(../images/circle/activity-1822482_640.jpg); }
+
+.circl-info:hover {
+  opacity: 1;
+  box-shadow: inset 0 0 0 110px rgba(88, 67, 210, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1); }
