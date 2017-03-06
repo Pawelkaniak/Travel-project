@@ -294,3 +294,74 @@ header {
     0 1px 2px rgba(0,0,0,0.1);
 }
 
+/*offers_explore SECTION*/
+////////////////////////////////////////////////////////////////////////////////////////////
+
+.offers_explore  {
+  margin-top: 80px;
+  border-top: 1px solid #484848;
+  .choose_explore {
+    text-align: center;
+    h2 {
+      padding-top: 1.2em;
+      padding-bottom:1.2em;
+      color: red;
+      font-size: 2.4em;
+    }
+    p {
+      font-size: 1.4em;
+      padding-bottom: 82px;
+    }
+  } 
+  .travel_offers {
+    border: 1px solid red;
+    .offers {
+      border: 1px solid blue;
+      .pic_offer {
+        border: 1px solid green;
+        width: 24.5%;
+        height: 300px;
+        display: inline-block;
+      }
+      .pic_num1{
+        background-image: url(../images/places/ancient-1869218_640.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .pic_num2{
+      }
+      .pic_num3{
+      }
+      .pic_num4{
+      }
+      .pic_num5{
+      }
+      .pic_num6{
+      }
+      .pic_num7{
+      }
+      .pic_num8{
+      }
+      .pic_num9{
+      }
+      .pic_num10{
+      }
+      .pic_num11{
+      }
+      .pic_num12{
+      }
+      .pic_num13{
+      }
+      .pic_num14{
+      }
+      .pic_num15{
+      }
+      .pic_num16{
+      }
+      
+    }
+  }
+}
+
+
+
