@@ -32,7 +32,7 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 }
 
 header {
-  background-image: url(../images/background/ancient-1869218_1920.jpg);
+  background-image: url(../images/background/train-947323_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   //background-attachment: fixed;
@@ -316,9 +316,9 @@ header {
   .travel_offers {
     border: 1px solid red;
     .offers {
-      border: 1px solid blue;
+      //border: 1px solid blue;
       .pic_offer {
-        border: 1px solid green;
+        //border: 1px solid green;
         width: 24.5%;
         min-height: 300px;
         display: inline-block;
