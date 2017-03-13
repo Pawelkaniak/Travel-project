@@ -2,8 +2,8 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var refresh = require('gulp-refresh');
-
-
+var bourbon = require('node-bourbon');
+bourbon.includePaths // Array of Bourbon paths
 
 gulp.task('jshint', function() { 
   return gulp.src('js/**/*.js')
@@ -20,9 +20,9 @@ gulp.task('task-name', function() {
 })
 
 
-
 gulp.task('sass', function() {
   return gulp.src('scss/**/*.scss')
+    .pipe(sass({ includePaths: require('node-bourbon').includePaths}))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist'))
     .pipe(gulp.dest('css'))
