@@ -3,7 +3,7 @@
 @import "bourbon";
 // variables: 
 $font-inputs: 'Lato', sans-serif;
-$main-colors: rgb(235,235,235); //rgb(235,235,235);
+$main-colors: rgba(235,235,235, 0.4); //rgb(235,235,235);
 $menu-colors: #FFFAFA;
 $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 @mixin SearchEnginer-style {
@@ -33,6 +33,7 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 }
 
 header {
+
 }
 
 .slider {
@@ -50,7 +51,7 @@ header {
 }
 
 slider figure img {
-  width: 100%;
+  width: 100%; 
   float: left;
 }
 
@@ -181,7 +182,7 @@ slider figure img {
   //background-color: rgba(88, 67, 210, 0.6);
   p {
     font-family: 'Dancing Script', cursive;
-    color: $main-colors;
+    color: rgb(235,235,235);
     font-size: 4.8em;
     margin: 2.8em 0em 1.4em 5.5em;
     //border: 1px solid black;
@@ -472,10 +473,38 @@ slider figure img {
         background-size: cover;
         width: 33.3%;
       }
-      
     }
   }
 }
 
+/*membership SECTION*/
+////////////////////////////////////////////////////////////////////////////////
 
+
+.membership {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  background-color: lightslategrey;
+  .background_member{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    .join_us_member{
+      margin: 0 auto;
+      font-size: 1rem;
+      padding: 1.45rem 3.2rem;
+      display: block;
+      background-color: deepskyblue;
+      border: 2px solid transparent;
+      color: #ffffff;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background-color: whitesmoke;
+        color: deepskyblue;
+        border-color: deepskyblue;
+      }
+    }
+  }
+}
 

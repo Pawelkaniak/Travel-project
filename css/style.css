@@ -155,7 +155,7 @@ slider figure img {
 
 .search .form-section .Where {
   display: inline-block;
-  background-color: #ebebeb;
+  background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid transparent;
   float: left;
   padding: 8px; }
@@ -168,7 +168,7 @@ slider figure img {
 .search .form-section .check_in {
   display: inline-block;
   display: inline-block;
-  background-color: #ebebeb;
+  background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid transparent;
   float: left;
   padding: 8px;
@@ -191,7 +191,7 @@ slider figure img {
 
 .search .form-section .check_out {
   display: inline-block;
-  background-color: #ebebeb;
+  background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid transparent;
   float: left;
   padding: 8px;
@@ -214,7 +214,7 @@ slider figure img {
 
 .search .form-section .Number_guests {
   display: inline-block;
-  background-color: #ebebeb;
+  background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid transparent;
   float: left;
   padding: 10px; }
@@ -246,7 +246,7 @@ slider figure img {
   transition: all 0.4s ease-in-out; }
 
 .search .form-section .button_search .btn-default:hover {
-  background-color: #ebebeb;
+  background-color: rgba(235, 235, 235, 0.4);
   color: #5843d2;
   border-color: #5843d2; }
 
@@ -448,3 +448,30 @@ slider figure img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 33.3%; }
+
+/*membership SECTION*/
+.membership {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: lightslategrey; }
+
+.membership .background_member {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
+.membership .background_member .join_us_member {
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 1.45rem 3.2rem;
+  display: block;
+  background-color: deepskyblue;
+  border: 2px solid transparent;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.membership .background_member .join_us_member:hover {
+  background-color: whitesmoke;
+  color: deepskyblue;
+  border-color: deepskyblue; }
