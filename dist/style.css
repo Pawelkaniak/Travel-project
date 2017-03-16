@@ -372,82 +372,66 @@ slider figure img {
   font-size: 1.4em;
   padding-bottom: 82px; }
 
-.offers_explore .travel_offers .offers .pic_offer {
-  width: 24.5%;
-  min-height: 300px;
-  display: inline-block; }
+.containerFlex {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1300px; }
 
-.offers_explore .travel_offers .offers .pic_num1 {
-  background-image: url(../images/places/dubrovnik-512798_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 33.3%; }
+.resp_pic {
+  max-width: 430px;
+  padding: 0 0.1rem; }
 
-.offers_explore .travel_offers .offers .pic_num2 {
-  background-image: url(../images/places/barcelona-1931331_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 32.3%; }
+.travel_offers {
+  width: 100%;
+  padding: 0rem 0; }
 
-.offers_explore .travel_offers .offers .pic_num3 {
-  background-image: url(../images/places/comino-1498526_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 33.3%; }
+figure.effect-bubba {
+  position: relative; }
 
-.offers_explore .travel_offers .offers .pic_num4 {
-  background-image: url(../images/places/neuschwanstein-532850_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 33.3%; }
+figure.effect-bubba img {
+  opacity: 1; }
 
-.offers_explore .travel_offers .offers .pic_num5 {
-  background-image: url(../images/places/prague-2086967_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 32.3%; }
+figure.effect-bubba figcaption {
+  visibility: hidden;
+  margin: 20%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  flex-direction: column; }
 
-.offers_explore .travel_offers .offers .pic_num6 {
-  background-image: url(../images/places/stocholm_2311434.0.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 33.3%; }
+figure.effect-bubba figcaption:hover {
+  z-index: 1; }
 
-.offers_explore .travel_offers .offers .pic_num7 {
-  width: 33.3%;
-  background-image: url(../images/places/budapest-1299146-640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
+figure.effect-bubba figcaption h2 {
+  display: flex;
+  justify-content: center;
+  padding: 0.6em;
+  font-size: 1.4em; }
 
-.offers_explore .travel_offers .offers .pic_num8 {
-  background-image: url(../images/places/singapore-988213_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 32.3%; }
+figure.effect-bubba figcaption p {
+  padding: 0.6em;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
-.offers_explore .travel_offers .offers .pic_num9 {
-  background-image: url(../images/places/chiang-mai-1670926_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 33.3%; }
+figure.effect-bubba figcaption a {
+  display: flex;
+  justify-content: center; }
 
-.offers_explore .travel_offers .offers .pic_num10 {
-  background-image: url(../images/places/maldives-1993704_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 33.3%; }
+figure.effect-bubba:hover img {
+  opacity: 0.4; }
 
-.offers_explore .travel_offers .offers .pic_num11 {
-  background-image: url(../images/places/vw-camper-336606_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 32.3%; }
-
-.offers_explore .travel_offers .offers .pic_num12 {
-  background-image: url(../images/places/valencia-891267_640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 33.3%; }
+figure.effect-bubba:hover figcaption {
+  color: red;
+  opacity: 1 !important;
+  visibility: visible; }
 
 /*membership SECTION*/
 .membership {

@@ -2,8 +2,9 @@
 @import "reset";
 @import "bourbon";
 // variables: 
-$font-inputs: 'Lato', sans-serif;
-$main-colors: rgba(235,235,235, 0.4); //rgb(235,235,235);
+$font-inputs: 'Lato',
+sans-serif;
+$main-colors: rgba(235, 235, 235, 0.4); //rgb(235,235,235);
 $menu-colors: #FFFAFA;
 $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 @mixin SearchEnginer-style {
@@ -32,9 +33,7 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
   }
 }
 
-header {
-
-}
+header {}
 
 .slider {
   width: 100%;
@@ -42,16 +41,15 @@ header {
   z-index: -1;
   position: absolute;
   overflow: hidden;
-
 }
 
-.slider figure div{
+.slider figure div {
   width: 20%;
   float: left;
 }
 
 slider figure img {
-  width: 100%; 
+  width: 100%;
   float: left;
 }
 
@@ -66,12 +64,12 @@ slider figure img {
 @keyframes slidy {
   0% {
     left: 0%;
-  } 
+  }
   10% {
     left: 0%;
   }
   12% {
-    left: -100%; 
+    left: -100%;
   }
   22% {
     left: -100%;
@@ -82,20 +80,20 @@ slider figure img {
   34% {
     left: -200%;
   }
-  36%  {
+  36% {
     left: -300%;
-  } 
+  }
   46% {
     left: -300%;
   }
   48% {
     left: -400%;
   }
-  58%{
+  58% {
     left: - 400%;
   }
   60% {
-    left: - 300%; 
+    left: - 300%;
   }
   70% {
     left: -300%;
@@ -107,12 +105,12 @@ slider figure img {
     left: -200%;
   }
   84% {
-    left: -100%; 
-  }
-  94%{
     left: -100%;
   }
-  96%{
+  94% {
+    left: -100%;
+  }
+  96% {
     left: 0%;
   }
 }
@@ -125,9 +123,9 @@ slider figure img {
 }
 
 .clearfix {
-  content:'';
-  display:block;
-  clear:both;
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .main_width {
@@ -139,8 +137,6 @@ slider figure img {
   width: 100%;
   font-family: 'Crete Round', serif;
   border-radius: 25%;
-  
-  
   // Logo, Navigation and login for account. 
   nav {
     display: inline-block;
@@ -161,7 +157,6 @@ slider figure img {
       color: $menu-colors;
       font-size: 2.6em;
       font-family: 'Indie Flower', cursive;
-
     }
   }
   .account {
@@ -170,9 +165,9 @@ slider figure img {
     margin: 20px 20px 20px 20px;
     font-size: 1.2em;
     img {
-    padding-right: 6px;
-    width: 20px;
-    height: 20px;
+      padding-right: 6px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -182,7 +177,7 @@ slider figure img {
   //background-color: rgba(88, 67, 210, 0.6);
   p {
     font-family: 'Dancing Script', cursive;
-    color: rgb(235,235,235);
+    color: rgb(235, 235, 235);
     font-size: 4.8em;
     margin: 2.8em 0em 1.4em 5.5em;
     //border: 1px solid black;
@@ -213,7 +208,6 @@ slider figure img {
         width: 6em;
         float: left;
         font-family: $font-inputs;
-
       }
       .input-group-addon > img {
         width: 40px;
@@ -230,12 +224,12 @@ slider figure img {
         width: 6em;
         float: left;
         font-family: $font-inputs;
-
       }
       .input-group-addon > img {
         width: 40px;
         float: right;
-        padding: 4px;      }
+        padding: 4px;
+      }
     }
     .Number_guests {
       @include SearchEnginer-style;
@@ -264,13 +258,16 @@ slider figure img {
         &:hover {
           background-color: $main-colors;
           color: $btn-colors;
-            border-color: $btn-colors;
+          border-color: $btn-colors;
         }
       }
     }
   }
 }
+
+
 /*PROSPECT SECTION*/
+
 ////////////////////////////////////////////////////////////////////////////////////////
 .landing_page {
   //background-color: rgb(99,230,233);
@@ -280,21 +277,18 @@ slider figure img {
 
 @mixin CirclePhotosText {
   display: inline-block;
-  width: 33%; 
-  .circle { 
+  width: 33%;
+  .circle {
     width: 220px;
     height: 220px;
     border-radius: 50%;
     //border: 1px solid rgba(255,255,255,0.6);
     margin: 0 auto;
     cursor: default;
-    box-shadow: 
-      inset 0 0 0 0 rgba(200,95,66, 0.4),
-      inset 0 0 0 16px rgba(255,255,255,0.6),
-      0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease-in-out;
   }
-  :nth-child(n+2){
+  :nth-child(n+2) {
     text-align: center;
     padding: 10px;
     //border: 1px solid brown;
@@ -305,22 +299,20 @@ slider figure img {
   }
 }
 
-
 .prospect {
   //border: 1px solid red;
   margin-top: 60px;
   padding-top: 20px;
-  .first_proposal{
-  @include CirclePhotosText;
+  .first_proposal {
+    @include CirclePhotosText;
   }
   .second_proposal {
-  @include CirclePhotosText;
-  } 
+    @include CirclePhotosText;
+  }
   .third_proposal {
-  @include CirclePhotosText;
+    @include CirclePhotosText;
   }
 }
-
 
 .circl-info {
   transition: all 0.8s ease-in-out;
@@ -329,8 +321,6 @@ slider figure img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  
-  
   //border: 1px solid green;
   h3 {
     padding: 90px 0px 0px 24px;
@@ -346,43 +336,39 @@ slider figure img {
   }
   a {
     display: block;
-    margin:  0 auto;
+    margin: 0 auto;
   }
 }
 
-
-
-.circl-img1 { 
+.circl-img1 {
   background-image: url(../images/circle/circle2.jpg);
 }
 
-.circl-img2 { 
+.circl-img2 {
   background-image: url(../images/circle/travelfriend2.jpg);
 }
 
-.circl-img3 { 
+.circl-img3 {
   background-image: url(../images/circle/plane.jpg);
 }
 
 .circl-info:hover {
   opacity: 1;
-  box-shadow: 
-    inset 0 0 0 110px rgba(88, 67, 210, 0.4),
-    inset 0 0 0 16px rgba(255,255,255,0.8),
-    0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 0 110px rgba(88, 67, 210, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/*offers_explore SECTION*/
-////////////////////////////////////////////////////////////////////////////////////////////
 
-.offers_explore  {
+/*offers_explore SECTION*/
+
+////////////////////////////////////////////////////////////////////////////////////////////
+.offers_explore {
   margin-top: 80px;
   border-top: 1px solid #484848;
   .choose_explore {
     text-align: center;
     h2 {
       padding-top: 1.2em;
-      padding-bottom:1.2em;
+      padding-bottom: 1.2em;
       color: red;
       font-size: 2.4em;
     }
@@ -390,105 +376,87 @@ slider figure img {
       font-size: 1.4em;
       padding-bottom: 82px;
     }
-  } 
-  .travel_offers {
-    //border: 1px solid red;
-    .offers {
-      //border: 1px solid blue;
-      .pic_offer {
-        //border: 1px solid green;
-        width: 24.5%;
-        min-height: 300px;
-        display: inline-block;
+  }
+}
+
+.containerFlex {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1300px;
+}
+
+.resp_pic {
+  max-width: 430px;
+  padding: 0 0.1rem;
+}
+
+.travel_offers {
+  width: 100%;
+  padding: 0rem 0;
+}
+
+figure.effect-bubba {
+  position: relative;
+    img {
+      opacity: 1;
+    }
+    figcaption {
+      visibility: hidden;
+      margin: 20%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      flex-direction: column;
+        &:hover {
+        z-index: 1;
       }
-      .pic_num1{
-        background-image: url(../images/places/dubrovnik-512798_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 33.3%;
+      h2 {
+        display: flex;
+        justify-content: center;
+        padding: 0.6em;
+        font-size: 1.4em;
       }
-      .pic_num2{
-        background-image: url(../images/places/barcelona-1931331_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 32.3%;
+       span {}
+      p {
+        padding: 0.6em;
+        font-size: 1.2em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
       }
-      .pic_num3{
-        background-image: url(../images/places/comino-1498526_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 33.3%;
-      }
-      .pic_num4{
-        background-image: url(../images/places/neuschwanstein-532850_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 33.3%;
-      }
-      .pic_num5{
-        background-image: url(../images/places/prague-2086967_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 32.3%;
-      }
-      .pic_num6{
-        background-image: url(../images/places/stocholm_2311434.0.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 33.3%;
-      }
-      .pic_num7{
-        width: 33.3%;
-        background-image: url(../images/places/budapest-1299146-640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .pic_num8{
-        background-image: url(../images/places/singapore-988213_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 32.3%;
-      }
-      .pic_num9{
-        background-image: url(../images/places/chiang-mai-1670926_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 33.3%;
-      }
-      .pic_num10{
-        background-image: url(../images/places/maldives-1993704_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 33.3%;
-      }
-      .pic_num11{
-        background-image: url(../images/places/vw-camper-336606_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 32.3%;
-      }
-      .pic_num12{
-        background-image: url(../images/places/valencia-891267_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 33.3%;
-      }
+      a {
+        display: flex;
+        justify-content: center;
+    }
+  }  &:hover {
+    img {
+    opacity: 0.4; 
+    }
+    figcaption {
+    color: red;
+    opacity: 1 !important;
+    visibility: visible;
     }
   }
 }
 
 /*membership SECTION*/
+
 ////////////////////////////////////////////////////////////////////////////////
-
-
 .membership {
-    margin-top: 2em;
-    margin-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   background-color: lightslategrey;
-  .background_member{
+  .background_member {
     padding-top: 3em;
     padding-bottom: 3em;
-    .join_us_member{
+    .join_us_member {
       margin: 0 auto;
       font-size: 1rem;
       padding: 1.45rem 3.2rem;
@@ -507,4 +475,3 @@ slider figure img {
     }
   }
 }
-
