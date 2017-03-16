@@ -379,59 +379,68 @@ slider figure img {
   margin: 0 auto;
   flex-direction: row;
   justify-content: center;
-  max-width: 1300px; }
+  content: space-between;
+  max-width: 1350px; }
 
 .resp_pic {
-  max-width: 430px;
-  padding: 0 0.1rem; }
+  outline: 0;
+  max-width: 440px; }
 
 .travel_offers {
   width: 100%;
   padding: 0rem 0; }
 
-figure.effect-bubba {
-  position: relative; }
+figure.effect-img {
+  outline: 0;
+  margin: 0.1rem 0.1rem;
+  position: relative;
+  background: violet; }
 
-figure.effect-bubba img {
-  opacity: 1; }
+figure.effect-img img {
+  opacity: 1;
+  -webkit-transition: opacity 1.65s, -webkit-transform 1.65s;
+  transition: opacity 1.65s, transform 1.65s; }
 
-figure.effect-bubba figcaption {
+figure.effect-img figcaption {
   visibility: hidden;
-  margin: 20%;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  left: 30px;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
   position: absolute;
   flex-direction: column; }
 
-figure.effect-bubba figcaption:hover {
+figure.effect-img figcaption:hover {
   z-index: 1; }
 
-figure.effect-bubba figcaption h2 {
+figure.effect-img figcaption h2 {
   display: flex;
   justify-content: center;
-  padding: 0.6em;
-  font-size: 1.4em; }
+  padding: 0.8em;
+  font-size: 1.5em; }
 
-figure.effect-bubba figcaption p {
-  padding: 0.6em;
-  font-size: 1.2em;
+figure.effect-img figcaption p {
+  padding: 0.8em;
+  font-size: 1.4em;
   text-align: center;
   display: flex;
   justify-content: center; }
 
-figure.effect-bubba figcaption a {
+figure.effect-img figcaption a {
   display: flex;
   justify-content: center; }
 
-figure.effect-bubba:hover img {
+figure.effect-img:hover img {
   opacity: 0.4; }
 
-figure.effect-bubba:hover figcaption {
-  color: red;
-  opacity: 1 !important;
+figure.effect-img:hover figcaption {
+  color: white;
+  opacity: 1;
   visibility: visible; }
+
+figure {
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
 
 /*membership SECTION*/
 .membership {
