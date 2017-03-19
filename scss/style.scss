@@ -9,8 +9,6 @@ $menu-colors: #FFFAFA;
 $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 @mixin SearchEnginer-style {
   display: inline-block;
-  //font-size: 1.1rem;
-  //padding-top: 1em;
   background-color: $main-colors;
   border: 1px solid transparent;
   input {
@@ -117,7 +115,6 @@ slider figure img {
 
 // container and main widthraw.
 .container {
-  //: 1px solid #DC143C; 
   margin: 0px auto;
   width: 100%;
 }
@@ -137,12 +134,11 @@ slider figure img {
   width: 100%;
   font-family: 'Crete Round', serif;
   border-radius: 25%;
+  
   // Logo, Navigation and login for account. 
   nav {
     display: inline-block;
-    //float: left;
     color: $menu-colors;
-    //margin: 5px 0px 0px 15px;
     padding: 20px 5px 5px 5px;
     font-size: 1.1em;
     li {
@@ -196,7 +192,7 @@ slider figure img {
     .Where {
       @include SearchEnginer-style;
       float: left;
-      padding: 8px;
+      padding: 0.5em;
     }
     .check_in {
       display: inline-block;
@@ -266,7 +262,7 @@ slider figure img {
 }
 
 
-/*PROSPECT SECTION*/
+/*prospect SECTION*/
 
 ////////////////////////////////////////////////////////////////////////////////////////
 .landing_page {
@@ -282,7 +278,6 @@ slider figure img {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    //border: 1px solid rgba(255,255,255,0.6);
     margin: 0 auto;
     cursor: default;
     box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -300,7 +295,6 @@ slider figure img {
 }
 
 .prospect {
-  //border: 1px solid red;
   margin-top: 60px;
   padding-top: 20px;
   .first_proposal {
@@ -321,13 +315,11 @@ slider figure img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  //border: 1px solid green;
   h3 {
     padding: 90px 0px 0px 24px;
-    color: white; //rgba(86, 52, 209, 1);
+    color: white; 
     font-weight: 700;
     font-size: 22px;
-    //border-bottom: 2px solid rgba(255,255,255,0.5);
   }
   p {
     font-size: 18px;
@@ -391,8 +383,8 @@ slider figure img {
 }
 
 .resp_pic {
-  outline: 0;
   max-width: 440px;
+  margin: 0 0 -0.2em 0;
 }
 
 .travel_offers {
@@ -401,15 +393,10 @@ slider figure img {
 }
 
 figure.effect-img {
-  outline: 0;
-  margin: 0.1rem 0.1rem;
+  background-color: violet;
+  margin: 0.2rem 0.2rem;
   position: relative;
-  background: violet;
-    img {
-      opacity: 1;
-      -webkit-transition: opacity 1.65s, -webkit-transform 1.65s;
-      transition: opacity 1.65s, transform 1.65s;
-    }
+    /*img {}*/
     figcaption {
       visibility: hidden;
       left: 30px;
@@ -417,47 +404,100 @@ figure.effect-img {
       right: 30px;
       bottom: 30px;
       position: absolute;
-      flex-direction: column;
         &:hover {
         z-index: 1;
       }
       h2 {
         display: flex;
         justify-content: center;
-        padding: 0.8em;
+        padding: 1.8em;
         font-size: 1.5em;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0,-20px,0);
+        transform: translate3d(0,-20px,0);
       }
        span {}
       p {
-        padding: 0.8em;
+        padding: 1em;
         font-size: 1.4em;
         text-align: center;
         display: flex;
         justify-content: center;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0);
       }
       a {
         display: flex;
         justify-content: center;
+        z-index: 1000;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0);
     }
   }  &:hover {
     img {
-    opacity: 0.4;
+    opacity: 0.7;
     }
     figcaption {
     color: white;
     opacity: 1;
     visibility: visible;
+    h2,
+    a,
+    p {
+      opacity: 1;
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+      }
     }
   }
 }
 
-figure {
-padding-bottom: 0px;
-margin-bottom: 0px;
+///////** effect-img - added pseudo classes for border animation **//////   
+figure.effect-img figcaption::before,
+figure.effect-img figcaption::after {
+  position: absolute;
+  top: -0.4em;
+  right: -0.4em;
+  bottom: -0.4em;
+  left: -0.4em;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
+
+figure.effect-img figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+figure.effect-img figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+
+figure.effect-img:hover figcaption::before,
+figure.effect-img:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
 /*membership SECTION*/
 
-////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 .membership {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -484,3 +524,16 @@ margin-bottom: 0px;
     }
   }
 }
+
+/*FOOTER*/
+
+///////////////////////////////////////////////////////////////////////////
+
+footer {
+  margin-top: 5rem;
+  border: 1px sild red;
+  width: 100%;
+  height: 30vh;
+  background: grey;
+}
+
