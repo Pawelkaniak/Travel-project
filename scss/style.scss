@@ -113,10 +113,19 @@ slider figure img {
   }
 }
 
-// container and main widthraw.
+// containers and main widthraw.
 .container {
   margin: 0px auto;
   width: 100%;
+}
+
+.container_flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  margin: 0px auto;
 }
 
 .clearfix {
@@ -134,7 +143,6 @@ slider figure img {
   width: 100%;
   font-family: 'Crete Round', serif;
   border-radius: 25%;
-  
   // Logo, Navigation and login for account. 
   nav {
     display: inline-block;
@@ -144,6 +152,12 @@ slider figure img {
     li {
       display: inline-block;
       padding: 0px 10px 0px 5px;
+      a {
+      color: $menu-colors;
+      }
+      a:link {
+        text-decoration: none;
+      }
     }
   }
   .logo {
@@ -156,18 +170,46 @@ slider figure img {
     }
   }
   .account {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
     color: $menu-colors;
     float: right;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 0 20px;
     font-size: 1.2em;
+    a {
+      text-decoration: none;
+      color: $menu-colors;
+      padding: 0 0 0.4em 0;
     img {
       padding-right: 6px;
       width: 20px;
       height: 20px;
+      }
     }
   }
 }
 
+/////////// CSS for drop down list with JS   ///////////////
+
+ul.dropdown {
+  //visibility: hidden;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  li {
+    margin: 0.2em auto;
+    padding: 0.1em 0 0 1.5em;
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+///////////////////////////////////////////////////////
 .inscription {
   position: relative;
   //background-color: rgba(88, 67, 210, 0.6);
@@ -182,7 +224,6 @@ slider figure img {
 
 // Travel oferts - search enginer 
 .search {
-  //background: rgba(250, 250, 250, 0.3);
   border-radius: 5px;
   width: 100%;
   padding-bottom: 140px;
@@ -317,7 +358,7 @@ slider figure img {
   border-radius: 50%;
   h3 {
     padding: 90px 0px 0px 24px;
-    color: white; 
+    color: white;
     font-weight: 700;
     font-size: 22px;
   }
@@ -325,10 +366,15 @@ slider figure img {
     font-size: 18px;
     color: white;
     font-weight: 700;
-  }
   a {
     display: block;
     margin: 0 auto;
+    border-bottom: hidden;
+    color: white;
+    }
+    a:link {
+    text-decoration: none;
+    }
   }
 }
 
@@ -354,8 +400,10 @@ slider figure img {
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 .offers_explore {
+  //background-color: ghostwhite;
   margin-top: 80px;
   border-top: 1px solid #484848;
+  padding-bottom: 3rem;
   .choose_explore {
     text-align: center;
     h2 {
@@ -389,69 +437,68 @@ slider figure img {
 
 .travel_offers {
   width: 100%;
-  padding: 0rem 0;
 }
 
 figure.effect-img {
-  background-color: violet;
+  background-color: #85144b;
   margin: 0.2rem 0.2rem;
   position: relative;
-    /*img {}*/
-    figcaption {
-      visibility: hidden;
-      left: 30px;
-      top: 30px;
-      right: 30px;
-      bottom: 30px;
-      position: absolute;
-        &:hover {
-        z-index: 1;
-      }
-      h2 {
-        display: flex;
-        justify-content: center;
-        padding: 1.8em;
-        font-size: 1.5em;
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(0,-20px,0);
-        transform: translate3d(0,-20px,0);
-      }
-       span {}
-      p {
-        padding: 1em;
-        font-size: 1.4em;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: translate3d(0,20px,0);
-        transform: translate3d(0,20px,0);
-      }
-      a {
-        display: flex;
-        justify-content: center;
-        z-index: 1000;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: translate3d(0,20px,0);
-        transform: translate3d(0,20px,0);
+  /*img {}*/
+  figcaption {
+    visibility: hidden;
+    left: 30px;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    position: absolute;
+    &:hover {
+      z-index: 1;
     }
-  }  &:hover {
-    img {
-    opacity: 0.7;
+    h2 {
+      display: flex;
+      justify-content: center;
+      padding: 1.8em;
+      font-size: 1.5em;
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
     }
-    figcaption {
-    color: white;
-    opacity: 1;
-    visibility: visible;
-    h2,
-    a,
+    span {}
     p {
+      padding: 1em;
+      font-size: 1.4em;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+    }
+  }
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+    figcaption {
+      color: white;
       opacity: 1;
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
+      visibility: visible;
+      h2,
+      a,
+      p {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
       }
     }
   }
@@ -474,17 +521,16 @@ figure.effect-img figcaption::after {
 figure.effect-img figcaption::before {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
 figure.effect-img figcaption::after {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
-  -webkit-transform: scale(1,0);
-  transform: scale(1,0);
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
 }
-
 
 figure.effect-img:hover figcaption::before,
 figure.effect-img:hover figcaption::after {
@@ -494,46 +540,224 @@ figure.effect-img:hover figcaption::after {
 }
 
 
-
 /*membership SECTION*/
 
 ///////////////////////////////////////////////////////////////////////////
 .membership {
+  border-top: solid 1px #222222;
   margin-top: 2em;
-  margin-bottom: 2em;
-  background-color: lightslategrey;
-  .background_member {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    .join_us_member {
-      margin: 0 auto;
-      font-size: 1rem;
-      padding: 1.45rem 3.2rem;
-      display: block;
-      background-color: deepskyblue;
-      border: 2px solid transparent;
-      color: #ffffff;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-      &:hover {
-        background-color: whitesmoke;
-        color: deepskyblue;
-        border-color: deepskyblue;
+  //margin-bottom: 2em;
+  /*background-image: url(../images/member/pexels-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: right;*/
+  //background-color: #F6F6F6;
+  .info_member {
+    text-align: center;
+    h2 {
+      padding-top: 1.2em;
+      padding-bottom: 1.2em;
+      color: red;
+      font-size: 2.4em;
+    }
+    p {
+      font-size: 1.4em;
+      padding-bottom: 82px;
+    }
+  }
+}
+
+.background_member {
+  padding-bottom: 3em;
+}
+
+
+.member_text {
+  padding: 0 0 0 0;
+  max-width: 24em;
+  height: 100%;
+  border: 2px solid black;
+  h2 {
+    color: white;
+    padding-top: 1.2em;
+    background-color: #292b2e;
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    height: 2em;
+    font-size: 1.4em;
+  }
+  
+  p.text_mb1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #222222;
+  }
+  
+  h3 { 
+    color: red;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+  
+  p.text_mb2 {
+    padding-top: 1.2em;
+  }
+  
+  ul {
+    padding-top: 1em;
+    padding-bottom: 1em; 
+    padding-left: 25%;
+    text-align: left;
+  }
+  
+  .join_us {
+    margin: 1.6em auto;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 40px;
+    background-color: #292b2e;
+    color: #f9f9f9;
+    padding: 14px 63px;
+  }
+  
+  .join_us:hover {
+    background-color: #85144b; //rgb(240,128,128);
+  }
+}
+.become_member {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  .flex_member {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .color_member,
+  .support_member,
+  .organizer_member {
+    background-color: white;
+    border-radius: 40px;
+    margin: 0 40px 0 40px;
+    //@include member_text;
+  }
+}
+
+//////  CSS class for JavaScript  ///////
+
+.color_member {
+    padding: 0 0 0 0;
+    max-width: 24em;
+    height: 100%;
+  border: 2px solid #85144b;
+    h2 {
+      color: white;
+      padding-top: 1.2em;
+      background-color: #85144b;
+      border-top-left-radius: 37px;
+      border-top-right-radius: 37px;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 100%;
+      height: 2em;
+      font-size: 1.4em;
+    }
+
+    p.text_mb1 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #85144b;
+    }
+
+    h3 { 
+      color: red;
+      padding-top: 1em;
+      padding-bottom: 0.5em;
+    }
+
+    p.text_mb2 {
+      padding-top: 1.2em;
+    }
+
+    ul {
+      padding-top: 1em;
+      padding-bottom: 1em; 
+      padding-left: 25%;
+      text-align: left;
+    }
+
+    .join_us {
+      margin: 1.6em auto;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 40px;
+      background-color: #85144b;
+      color: #f9f9f9;
+      padding: 14px 63px;
+  }
+}
+
+/*FOOTER*/
+///////////////////////////////////////////////////////////////////////////
+
+.footer_width {
+  max-width: 1050px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 2em;
+  border-top: 1px solid #222222;
+  width: 100%;
+  //height: 30vh;
+}
+.footer_info {
+  justify-content: space-around;
+  //align-items: flex-start;
+  padding: 0 ;
+  .about {
+    h3 {
+      font-weight: bold;
+      padding: 0 0 0.9em 0;
+    }
+    li{
+      padding: 0.1em 0;
+    a {
+      text-decoration: none;
+      color: grey;
+      }
+    a:hover {
+      border-bottom: 2px solid grey;
       }
     }
   }
 }
 
-/*FOOTER*/
-
-///////////////////////////////////////////////////////////////////////////
-
-footer {
-  margin-top: 5rem;
-  border: 1px sild red;
-  width: 100%;
-  height: 30vh;
-  background: grey;
+.airplane_icon{
+  padding: 1.4em 0 0 0;
 }
 
+.terms_privacy {
+  border-top: 1px solid #222222;
+  margin: 1.8em auto;
+  padding-top: 1em;
+  justify-content: space-between;
+  max-width: 850px;
+  .smth {
+  }
+  ul {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row-;
+    justify-content: center;
+    li {
+    padding: 0 0.2em;
+    } 
+  }
+}

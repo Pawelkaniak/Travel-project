@@ -8,7 +8,12 @@
   <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> </head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  </script>
+  
+    </head>
 
 <body>
   <header>
@@ -26,13 +31,20 @@
         <h1>Travendo</h1> </div>
       <nav>
         <ul class="menu">
-          <li><a>PLACES</a></li>
-          <li><a>YOUR TRIP</a></li>
-          <li><a>STORIES</a></li>
-          <li><a>FLY WITH US</a></li>
+          <li><a href="#">PLACES</a></li>
+          <li><a href="#">YOUR TRIP</a></li>
+          <li><a href="#">STORIES</a></li>
+          <li><a href="#">FLY WITH US</a></li>
         </ul>
       </nav>
-      <div class="account"><img src="images/icons/user-icon.png"><a>Sign in</a></div>
+      <div class="account container_flex">
+        <a href="#"><img src="images/icons/user-icon.png"><span>Sing in</span></a>
+        <ul class="dropdown  container_flex">
+          <li><a href="#"><i class="icon-profile icon-large"></i>Profile</a></li>
+          <li><a href="#"><i class="icon-airplane icon-large"></i>Your Travels</a></li>
+          <li><a href="#"><i class="icon-settings icon-large"></i>Settings</a></li>
+          <li><a href="#"><i class="icon-log_out icon-large"></i>Log Out</a></li>
+        </ul>
     </div>
     <div class="inscription main_width container">
       <p>Your place to be</p>
@@ -49,13 +61,13 @@
         <div class="check_in">
           <div class="form-group">
             <div class="input-group">
-              <input type="text" class="form-control" id="checkin" placeholder="Check in"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
+              <input type="text" class="form-control" id="datepicker" placeholder="Check in"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
         </div>
         <!-- INPUT CHECK OUT -->
         <div class="check_out">
           <div class="form-group">
             <div class="input-group">
-              <input type="text" class="form-control" id="checkout" placeholder="Check out"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
+              <input type="text" class="form-control" id="datepicker" placeholder="Check out"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
         </div>
         <!-- SELECT Number of guests -->
         <div class="Number_guests">
@@ -85,11 +97,11 @@
       <div class="first_proposal">
         <div class="circle circl-img1">
           <div class="circl-info">
-            <h3> Live your dream</h3>
-            <p>by Pawel Kaniak</p> <a href="http://s2.quickmeme.com/img/37/37d58eec3f40957821ed9704bb747fb74db3dd0a3b657e16a77bfb1840dab7a2.jpg">View me!</a> </div>
+            <h3>Live your dreams </h3>
+            <p><a href="#">Check out!</a></p> </div>
         </div>
         <div class="text_prop">
-          <h2>title1</h2>
+          <h2>Just do it!</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quam.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dignissimos quod ratione quos, iste iusto!</p>
         </div>
@@ -98,10 +110,10 @@
         <div class="circle circl-img2">
           <div class="circl-info">
             <h3>Find your passion</h3>
-            <p>by Pawel Kaniak</p> <a href="http://s2.quickmeme.com/img/37/37d58eec3f40957821ed9704bb747fb74db3dd0a3b657e16a77bfb1840dab7a2.jpg">View me!</a> </div>
+            <p><a href="#">Check out!</a></p> </div>
         </div>
         <div class="text_prop">
-          <h2>title2</h2>
+          <h2>Meet people with passion.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quam.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dignissimos quod ratione quos, iste iusto!</p>
         </div>
@@ -110,10 +122,10 @@
         <div class="circle circl-img3">
           <div class="circl-info">
             <h3>Travel everywhere</h3>
-            <p>by Pawel Kaniak</p> <a href="http://s2.quickmeme.com/img/37/37d58eec3f40957821ed9704bb747fb74db3dd0a3b657e16a77bfb1840dab7a2.jpg">View me!</a> </div>
+            <p><a href="#">Check out!</a></p> </div>
         </div>
         <div class="text_prop">
-          <h2>title3</h2>
+          <h2>Travel everywhere.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quam.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dignissimos quod ratione quos, iste iusto!</p>
         </div>
@@ -140,7 +152,7 @@
         <figcaption>
           <h2>Spain <span></span></h2>
           <p>It likes to appear out of thin air.</p>
-          <a href="#">View more</a>
+          <a href="">View more</a>
         </figcaption>		
       </figure>
       <figure class="effect-img">
@@ -179,7 +191,7 @@
       <figure class="effect-img">
         <img src="images/places/budapest-7-500.png" class="resp_pic">
         <figcaption>
-          <h2>Croatia <span></span></h2>
+          <h2>Hungary <span></span></h2>
           <p>It likes to appear out of thin air.</p>
           <a href="#">View more</a>
         </figcaption>
@@ -187,7 +199,7 @@
       <figure class="effect-img">
         <img src="images/places/singapore-8_500.png" class="resp_pic">
         <figcaption>
-          <h2>Croatia <span></span></h2>
+          <h2>Singapore <span></span></h2>
           <p>It likes to appear out of thin air.</p>
           <a href="#">View more</a>
         </figcaption>
@@ -195,7 +207,7 @@
       <figure class="effect-img">
         <img src="images/places/chiang-mai-500.png" class="resp_pic">
         <figcaption>
-          <h2>Croatia <span></span></h2>
+          <h2>Philipines<span></span></h2>
           <p>It likes to appear out of thin air.</p>
           <a href="#">View more</a>
         </figcaption>
@@ -203,7 +215,7 @@
       <figure class="effect-img">
         <img src="images/places/maldives-10_500.png" class="resp_pic">
         <figcaption>
-          <h2>Croatia <span></span></h2>
+          <h2>USA <span></span></h2>
           <p>It likes to appear out of thin air.</p>
           <a href="#">View more</a>
         </figcaption>
@@ -219,7 +231,7 @@
       <figure class="effect-img">
         <img src="images/places/valencia-12_500.png" class="resp_pic">
         <figcaption>
-          <h2>Croatia <span></span></h2>
+          <h2>Spain <span></span></h2>
           <p>It likes to appear out of thin air.</p>
           <a href="#">View more</a>
         </figcaption>
@@ -229,16 +241,83 @@
   </section>
   
   <section class="membership">
-    <div class="background_member">
-      <div class="member">
-        <button class="join_us_member">Join us!</button>
-      </div>
+    <div class="info_member main_width container">
+      <h2>Become our member!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, possimus!</p>
     </div>
+    <div class="background_member">
+      <div class="become_member main_width">
+        <div class="support_member flex_member member_text">
+            <h2>Supporter</h2>
+            <p class="text_mb1">Great experience by volunteer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quaerat?</p>
+          <h3>Do you want to ?</h3>
+          <ul>
+            <li>1.Kasia Loremipsum</li>
+            <li>2.Basia Loremipsum</li>
+            <li>3.Asia Loremipsum</li>
+            <li>4.Ania Loremipsum</li>
+            <li>5.Kaja Loremipsum</li>
+          </ul>
+            <p class="text_mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, impedit?</p>
+          <button class="join_us">Join us</button>
+          </div>
+        <div class="support_member flex_member member_text">
+            <h2>Organizer</h2>
+            <p class="text_mb1">Get experience organizing big Lorem ipsum dolor sit amet, consectetur. Explicabo, numquam. events</p>
+          <h3>If you have</h3>
+          <ul>
+            <li>1.Marek Loremipsum</li>
+            <li>2.Darek Loremipsum</li>
+            <li>3.Arek Loremipsum</li>
+            <li>4.Paweł Loremipsum</li>
+            <li>5.Piotrek Loremipsum</li>
+          </ul>
+            <p class="text_mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, ducimus!</p>
+          <button class="join_us">Join us</button>
+            </div>
+        </div>
+      </div>
   </section>
   <footer> 
-    <div class="story">
-      <img src="images/background/">
-      <img src="images/background/">
+    <div class="footer_info footer_width container_flex">
+      <div class="airplane_icon"><a href="#"><img src="images/icons/airplane-flight64.png"></a></div>
+      <div class="about">
+        <h3>Travelo</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+        <div class="about">
+        <h3>Discover</h3>
+        <ul>
+          <li><a href="#">Why travel</a></li>
+          <li><a href="#">Travel alone</a></li>
+          <li><a href="#">Travel with friends</a></li>
+          <li><a href="#">Hospitality</a></li>
+          <li><a href="#">Guidebooks</a></li>
+        </ul>
+      </div>
+      <div class="about">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="terms_privacy container_flex footer_width">
+      <div class="smth">&copy; Travelo</div>
+      <div>
+      <ul>
+        <li><a href="https://facebook.com"><img src="images/icons/facebook16.png"></a></li>
+        <li><a href="https://twitter.com"><img src="images/icons/twitter16.png"></a></li>
+        <li><a href="https://www.instagram.com/"><img src="images/icons/instagram16.png"></a></li>
+      </ul>
+    </div>
     </div>
   
   </footer>
