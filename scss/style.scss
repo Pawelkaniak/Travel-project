@@ -169,6 +169,7 @@ slider figure img {
     }
   }
   .account {
+    width: 140px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -180,29 +181,33 @@ slider figure img {
     #colorSi {
       text-decoration: none;
       color: $menu-colors;
-      padding: 0 0 0.4em 0;
+      padding: 0 0 0.2em 0;
+      span:hover {
+        border-bottom: 2px solid white;  
+      }
     img {
       padding-right: 0.5em;
       width: 22px;
       height: 22px;
       }
     }
-  }
+  } 
 }
+
 
 /////////// CSS for drop down list with JS   ///////////////
 
 ul.dropdown {
-  //visibility: hidden;
   -webkit-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  padding:0 0.2em 0.4em 0.2em;
+  //padding:0 0.2em 0.4em 0.2em;
   li {
     background-color: rgba(255, 255, 255, 0.7);
     margin-top: 0.3em;
     padding: 0.4em 0.4em 0.4em 0.9em;
     font-size: 1em;
+    display: none;
     a {
       -webkit-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -220,8 +225,6 @@ ul.dropdown {
     }
   }
 }
-
-
 
 
 ///////////////////////////////////////////////////////

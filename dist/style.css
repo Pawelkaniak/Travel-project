@@ -139,6 +139,7 @@ slider figure img {
   font-family: 'Indie Flower', cursive; }
 
 .head_nav .account {
+  width: 140px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -151,7 +152,10 @@ slider figure img {
 .head_nav .account #colorSi {
   text-decoration: none;
   color: #FFFAFA;
-  padding: 0 0 0.4em 0; }
+  padding: 0 0 0.2em 0; }
+
+.head_nav .account #colorSi span:hover {
+  border-bottom: 2px solid white; }
 
 .head_nav .account #colorSi img {
   padding-right: 0.5em;
@@ -161,14 +165,14 @@ slider figure img {
 ul.dropdown {
   -webkit-flex-direction: column;
   flex-direction: column;
-  text-align: center;
-  padding: 0 0.2em 0.4em 0.2em; }
+  text-align: center; }
 
 ul.dropdown li {
   background-color: rgba(255, 255, 255, 0.7);
   margin-top: 0.3em;
   padding: 0.4em 0.4em 0.4em 0.9em;
-  font-size: 1em; }
+  font-size: 1em;
+  display: none; }
 
 ul.dropdown li a {
   -webkit-flex-wrap: nowrap;
