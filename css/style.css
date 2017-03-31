@@ -117,28 +117,38 @@ slider figure img {
   display: inline-block;
   color: #FFFAFA;
   padding: 20px 5px 5px 5px;
-  font-size: 1.1em; }
+  font-size: 1.2em; }
 
 .head_nav nav li {
   display: inline-block;
   padding: 0px 10px 0px 5px; }
 
 .head_nav nav li a {
+  text-decoration: none;
   color: #FFFAFA; }
 
-.head_nav nav li a:link {
-  text-decoration: none; }
+.head_nav nav li a::after {
+  margin-top: 3px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #5843d2;
+  transition: width 0.8s; }
 
-.head_nav .logo {
+.head_nav nav li a:hover::after {
+  width: 100%; }
+
+.logo {
   display: inline-block;
   margin: 10px; }
 
-.head_nav .logo h1 {
+.logo h1 {
   color: #FFFAFA;
   font-size: 2.6em;
   font-family: 'Indie Flower', cursive; }
 
-.head_nav .account {
+.account {
   width: 140px;
   display: -webkit-flex;
   display: flex;
@@ -149,15 +159,15 @@ slider figure img {
   margin: 20px 20px 0 20px;
   font-size: 1.2em; }
 
-.head_nav .account #colorSi {
+.account #colorSi {
   text-decoration: none;
   color: #FFFAFA;
   padding: 0 0 0.2em 0; }
 
-.head_nav .account #colorSi span:hover {
+.account #colorSi span:hover {
   border-bottom: 2px solid white; }
 
-.head_nav .account #colorSi img {
+.account #colorSi img {
   padding-right: 0.5em;
   width: 22px;
   height: 22px; }

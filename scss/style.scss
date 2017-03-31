@@ -147,15 +147,28 @@ slider figure img {
     display: inline-block;
     color: $menu-colors;
     padding: 20px 5px 5px 5px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     li {
       display: inline-block;
       padding: 0px 10px 0px 5px;
       a {
-      color: $menu-colors;
-      }
-      a:link {
         text-decoration: none;
+        color: $menu-colors;
+//// * pseudo-classes with hover animation * /////
+        &::after {
+          margin-top: 3px;
+          content: '';
+          display: block;
+          width: 0;
+          height: 3px;
+          background: $btn-colors;
+          transition: width 0.8s;
+        }
+        &:hover::after {
+          width: 100%;
+ //////////////////////////////////////////////////
+          }
+        }
       }
     }
   }
@@ -189,7 +202,7 @@ slider figure img {
       padding-right: 0.5em;
       width: 22px;
       height: 22px;
-      }
+      
     }
   } 
 }
