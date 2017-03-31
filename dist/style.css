@@ -144,30 +144,46 @@ slider figure img {
   -webkit-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  color: #FFFAFA;
   float: right;
   margin: 20px 20px 0 20px;
   font-size: 1.2em; }
 
-.head_nav .account a {
+.head_nav .account #colorSi {
   text-decoration: none;
   color: #FFFAFA;
   padding: 0 0 0.4em 0; }
 
-.head_nav .account a img {
-  padding-right: 6px;
-  width: 20px;
-  height: 20px; }
+.head_nav .account #colorSi img {
+  padding-right: 0.5em;
+  width: 22px;
+  height: 22px; }
 
 ul.dropdown {
   -webkit-flex-direction: column;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  padding: 0 0.2em 0.4em 0.2em; }
 
 ul.dropdown li {
-  margin: 0.2em auto;
-  padding: 0.1em 0 0 1.5em;
-  font-size: 0.9em; }
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.3em;
+  padding: 0.4em 0.4em 0.4em 0.9em;
+  font-size: 1em; }
+
+ul.dropdown li a {
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+  color: #5843d2; }
+
+ul.dropdown li a img {
+  width: 1.2em;
+  height: 1.2em;
+  padding-right: 0.3em; }
+
+ul.dropdown li a p {
+  padding-left: 0.3em; }
 
 .inscription {
   position: relative; }
