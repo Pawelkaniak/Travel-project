@@ -1,6 +1,7 @@
 // improts:
 @import "reset";
 @import "bourbon";
+//@import "calendar";
 // variables: 
 $font-inputs: 'Lato',
 sans-serif;
@@ -221,6 +222,7 @@ ul.dropdown {
     padding: 0.4em 0.4em 0.4em 0.9em;
     font-size: 1em;
     display: none;
+    width: 6.5em;
     a {
       -webkit-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -651,6 +653,14 @@ figure.effect-img:hover figcaption::after {
     background-color: #292b2e;
     color: #f9f9f9;
     padding: 14px 63px;
+    a {
+      text-decoration: none;
+      color: $menu-colors;
+      a:link {
+        text-decoration: none;
+        color: $menu-colors;
+      }
+    }
   }
   
   .join_us:hover {
@@ -730,6 +740,14 @@ figure.effect-img:hover figcaption::after {
       background-color: #85144b;
       color: #f9f9f9;
       padding: 14px 63px;
+      a {
+        text-decoration: none;
+        color: $menu-colors;
+        a:link {
+          text-decoration: none;
+          color: $menu-colors;
+      }
+    }
   }
 }
 
@@ -771,6 +789,12 @@ footer {
 
 .airplane_icon{
   padding: 1.4em 0 0 0;
+}
+
+#dialog {
+  display: none;
+  width: 200px;
+  height: 200px;
 }
 
 .terms_privacy {

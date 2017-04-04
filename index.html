@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <title>Travendo</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="css/datapicker.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -67,13 +68,13 @@
           <div class="check_in">
             <div class="form-group">
               <div class="input-group">
-                <input type="text" class="form-control" id="datepicker" placeholder="Check in"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
+                <input type="text" class="form-control" id="check_in" placeholder="Check in"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
           </div>
           <!-- INPUT CHECK OUT -->
           <div class="check_out">
             <div class="form-group">
               <div class="input-group">
-                <input type="text" class="form-control" id="datepicker" placeholder="Check out"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
+                <input type="text" class="form-control" id="check_out" placeholder="Check out"> </div> <span class="input-group-addon"><img src="images/icons/calendar-icon.png"></span> </div>
           </div>
           <!-- SELECT Number of guests -->
           <div class="Number_guests">
@@ -104,7 +105,7 @@
         <div class="circle circl-img1">
           <div class="circl-info">
             <h3>Live your dreams </h3>
-            <p><a href="#">Check out!</a></p>
+            <p><a href="javascript:void(0)" onclick="method()">Check out!</a></p>
           </div>
         </div>
         <div class="text_prop">
@@ -117,7 +118,7 @@
         <div class="circle circl-img2">
           <div class="circl-info">
             <h3>Find your passion</h3>
-            <p><a href="#">Check out!</a></p>
+            <p><a href="javascript:void(0)" onclick="method(); return false">Check out!</a></p>
           </div>
         </div>
         <div class="text_prop">
@@ -130,7 +131,7 @@
         <div class="circle circl-img3">
           <div class="circl-info">
             <h3>Travel everywhere</h3>
-            <p><a href="#">Check out!</a></p>
+            <p><a href="javascript:void(0)" onclick="method(); return false">Check out!</a></p>
           </div>
         </div>
         <div class="text_prop">
@@ -150,62 +151,62 @@
       <figure class="effect-img"> <img src="images/places/dubrovnik-1_500.png" class="resp_pic">
         <figcaption>
           <h2>Croatia <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/barcelona-2_500.png" class="resp_pic">
         <figcaption>
           <h2>Spain <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/comino-3_500.png" class="resp_pic">
         <figcaption>
           <h2>Malta <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/neuschwanstein-4_500.jpeg" class="resp_pic">
         <figcaption>
           <h2>Germany <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/prague-05_500.png" class="resp_pic">
         <figcaption>
           <h2>Czech Republic <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/stocholm-6_500.png" class="resp_pic">
         <figcaption>
           <h2>Sweden <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/budapest-7-500.png" class="resp_pic">
         <figcaption>
           <h2>Hungary <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/singapore-8_500.png" class="resp_pic">
         <figcaption>
           <h2>Singapore <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/chiang-mai-500.png" class="resp_pic">
         <figcaption>
           <h2>Philipines<span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/maldives-10_500.png" class="resp_pic">
         <figcaption>
           <h2>USA <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/vw-camper-11_500.png" class="resp_pic">
         <figcaption>
           <h2>Brazil <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
       <figure class="effect-img"> <img src="images/places/valencia-12_500.png" class="resp_pic">
         <figcaption>
           <h2>Spain <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <a href="#">View more</a> </figcaption>
+          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
     </div>
   </section>
@@ -228,7 +229,7 @@
             <li>5.Kaja Loremipsum</li>
           </ul>
           <p class="text_mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, impedit?</p>
-          <button class="join_us">Join us</button>
+          <button class="join_us"><a href="javascript:void(0)" onclick="method(); return false">Join us</a></button>
         </div>
         <div class="support_member flex_member member_text">
           <h2>Organizer</h2>
@@ -242,7 +243,7 @@
             <li>5.Piotrek Loremipsum</li>
           </ul>
           <p class="text_mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, ducimus!</p>
-          <button class="join_us">Join us</button>
+          <button class="join_us"><a href="javascript:void(0)" onclick="method(); return false">Join us</a></button>
         </div>
       </div>
     </div>
@@ -250,7 +251,7 @@
   <footer>
     <div class="footer_info footer_width container_flex">
       <div class="airplane_icon">
-        <a href="#"><img src="images/icons/airplane-flight64.png"></a>
+        <a href="javascript:void(0)"><img src="images/icons/airplane-flight64.png"></a>
       </div>
       <div class="about">
         <h3>Travelo</h3>
@@ -281,7 +282,7 @@
       </div>
     </div>
     <div class="terms_privacy container_flex footer_width">
-      <div class="smth">&copy; Travelo</div>
+      <div class="smth">&copy; Travendo</div>
       <div>
         <ul>
           <li>
@@ -299,5 +300,6 @@
   </footer>
 </body>
 <script src="JavaScript/JavaScript.js"></script>
+
 
 </html>

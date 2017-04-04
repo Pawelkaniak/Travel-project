@@ -23,32 +23,49 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Animation for account - dropdown list JQuery */
 
     /* slide down animation JQ*/
-  $('#colorSi').on('click', function () {
+  /*$('#colorSi').on('click', function () {
     $('.dropdown').find('li').eq(0).slideToggle(250);
     $('.dropdown').find('li').eq(1).slideToggle(500);
     $('.dropdown').find('li').eq(2).slideToggle(750);
     $('.dropdown').find('li').eq(3).slideToggle(1000);
-  });
+  });*/
   
-  /*$('#colorSi').on('click', function () {
-    $('.dropdown').find('li').eq(0).slideToggle(250, function()  { 
-      $('.dropdown').find('li').eq(1).slideToggle(250, function()  { 
-        $('.dropdown').find('li').eq(2).slideToggle(250, function()  { 
-          $('.dropdown').find('li').eq(3).slideToggle(250); 
+ $('#colorSi').on('click', function () {
+    $('.dropdown').find('li').eq(0).slideToggle(160, function()  { 
+      $('.dropdown').find('li').eq(1).slideToggle(160, function()  { 
+        $('.dropdown').find('li').eq(2).slideToggle(160, function()  { 
+          $('.dropdown').find('li').eq(3).slideToggle(160); 
         })
       })
     })
-  });*/
-      
-      /*$('.dropdown').find('li').eq(2).slideToggle(1000);
-    $('.dropdown').find('li').eq(3).slideToggle(1000);
-    });*/
-  
-  
-  /* datapicker in JQuery */
-  $(function () {
-    $("#datepicker").datepicker();
   });
+      
+
+  $('div.airplane_icon').on('click', function check_domain_input() {   
+      $("#dialog").dialog(); // Shows the new alert box.
+
+  });
+  
+  
+  
+  
+  /* datapickers in JQuery */
+  
+
+  $('#check_in').datepicker({
+    inline: true,
+    firstDay: 1,
+    showOtherMonths: true,
+    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  });
+  $('#check_out').datepicker({
+    inline: true,
+    firstDay: 1,
+    showOtherMonths: true,
+    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  });
+
+  
   
   
   /* JS changing class in membership section.  */

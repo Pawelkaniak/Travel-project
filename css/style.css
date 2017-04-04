@@ -182,7 +182,8 @@ ul.dropdown li {
   margin-top: 0.3em;
   padding: 0.4em 0.4em 0.4em 0.9em;
   font-size: 1em;
-  display: none; }
+  display: none;
+  width: 6.5em; }
 
 ul.dropdown li a {
   -webkit-flex-wrap: nowrap;
@@ -620,6 +621,14 @@ figure.effect-img:hover figcaption::after {
   color: #f9f9f9;
   padding: 14px 63px; }
 
+.member_text .join_us a {
+  text-decoration: none;
+  color: #FFFAFA; }
+
+.member_text .join_us a a:link {
+  text-decoration: none;
+  color: #FFFAFA; }
+
 .member_text .join_us:hover {
   background-color: #85144b; }
 
@@ -689,6 +698,14 @@ figure.effect-img:hover figcaption::after {
   color: #f9f9f9;
   padding: 14px 63px; }
 
+.color_member .join_us a {
+  text-decoration: none;
+  color: #FFFAFA; }
+
+.color_member .join_us a a:link {
+  text-decoration: none;
+  color: #FFFAFA; }
+
 /*FOOTER*/
 .footer_width {
   max-width: 1050px; }
@@ -719,6 +736,11 @@ footer {
 
 .airplane_icon {
   padding: 1.4em 0 0 0; }
+
+#dialog {
+  display: none;
+  width: 200px;
+  height: 200px; }
 
 .terms_privacy {
   border-top: 1px solid #222222;
