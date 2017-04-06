@@ -1,17 +1,38 @@
-/*.resp_pic2_1{
-    display: none;
-  }*/
-@media only screen and (max-width: 1355px) {
-  header {
-    font-size: 12px; }
-  section.offers_explore {
-    font-size: 12px; }
-  /*.resp_pic2{
-      display: none;
-    }
+#Pic1Res2,
+#Pic2Res2,
+#Pic3Res2,
+#Pic4Res2,
+#Pic5Res2 {
+  display: none; }
 
-    .resp_pic2_1{
-        max-width: 350px;
-        margin: 0 0 -0.2em 0;
-      display: inherit;
-    }*/ }
+/* 1280 x 640 */
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 15px; }
+  #Pic1Res1,
+  #Pic2Res1,
+  #Pic3Res1,
+  #Pic4Res1,
+  #Pic5Res1 {
+    display: none; }
+  #Pic1Res2,
+  #Pic2Res2,
+  #Pic3Res2,
+  #Pic4Res2,
+  #Pic5Res2 {
+    display: inherit; }
+  .inscription p {
+    margin: 2.4em 0em 1.4em 5.5em; }
+  .ui-datepicker {
+    width: 224px;
+    padding: 0.5em 0.4em 0 0.4em;
+    margin-top: 0.5em;
+    font-size: 0.6em; }
+  .ui-datepicker .ui-datepicker-header {
+    padding-bottom: 1.1em; }
+  .ui-datepicker-calendar th {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .ui-datepicker-calendar td {
+    padding: 0 5px;
+    line-height: 22px; } }

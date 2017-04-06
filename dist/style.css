@@ -167,7 +167,7 @@ slider figure img {
 
 .account #colorSi::after {
   margin-top: 3px;
-  margin-left: 1.25em;
+  margin-left: 1.35em;
   content: '';
   display: block;
   width: 0;
@@ -176,7 +176,7 @@ slider figure img {
   transition: width 0.8s; }
 
 .account #colorSi:hover::after {
-  width: 67%; }
+  width: 66%; }
 
 .account #colorSi img {
   padding-right: 0.4em;
@@ -211,23 +211,21 @@ ul.dropdown li a img {
 ul.dropdown li a p {
   padding-left: 0.3em; }
 
-.inscription {
-  position: relative; }
-
 .inscription p {
+  margin-left: auto;
   font-family: 'Dancing Script', cursive;
   color: #ebebeb;
   font-size: 4.8em;
-  margin: 2.8em 0em 1.4em 5.5em; }
+  margin: 2.7em 0em 1.5em 5.5em; }
 
 .search {
   border-radius: 5px;
   width: 100%;
-  padding-bottom: 140px;
-  margin-bottom: 12em; }
+  padding-bottom: 8.75em;
+  margin-bottom: 192px; }
 
 .search .form-section {
-  margin-left: 125px; }
+  margin-left: 140px; }
 
 .search .form-section .Where {
   display: inline-block;
@@ -237,7 +235,7 @@ ul.dropdown li a p {
   padding: 0.5em; }
 
 .search .form-section .Where input {
-  padding-left: 15px;
+  padding-left: 1em;
   font-size: 1.2em;
   height: 2.8rem; }
 
@@ -247,11 +245,11 @@ ul.dropdown li a p {
   background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid transparent;
   float: left;
-  padding: 8px;
+  padding: 0.5em;
   width: 17%; }
 
 .search .form-section .check_in input {
-  padding-left: 15px;
+  padding-left: 1em;
   font-size: 1.2em;
   height: 2.8rem; }
 
@@ -263,18 +261,18 @@ ul.dropdown li a p {
 .search .form-section .check_in .input-group-addon > img {
   width: 40px;
   float: right;
-  padding: 4px; }
+  padding: 0.25em; }
 
 .search .form-section .check_out {
   display: inline-block;
   background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid transparent;
   float: left;
-  padding: 8px;
+  padding: 0.5em;
   width: 17%; }
 
 .search .form-section .check_out input {
-  padding-left: 15px;
+  padding-left: 1em;
   font-size: 1.2em;
   height: 2.8rem; }
 
@@ -286,23 +284,23 @@ ul.dropdown li a p {
 .search .form-section .check_out .input-group-addon > img {
   width: 40px;
   float: right;
-  padding: 4px; }
+  padding: 0.25em; }
 
 .search .form-section .Number_guests {
   display: inline-block;
   background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid transparent;
   float: left;
-  padding: 10px; }
+  padding: 0.65em; }
 
 .search .form-section .Number_guests input {
-  padding-left: 15px;
+  padding-left: 1em;
   font-size: 1.2em;
   height: 2.8rem; }
 
 .search .form-section .Number_guests .form-control {
-  width: 140px;
-  height: 46px;
+  width: 8.75em;
+  height: 2.875em;
   font-size: 1em;
   font-family: "Lato", sans-serif; }
 
@@ -311,8 +309,8 @@ ul.dropdown li a p {
 
 .search .form-section .button_search .btn-default {
   margin: 0 auto;
-  font-size: 1rem;
-  padding: 1.45rem 2rem;
+  font-size: 1em;
+  padding: 1.45em 2em;
   display: block;
   background-color: #5843d2;
   border: 2px solid transparent;

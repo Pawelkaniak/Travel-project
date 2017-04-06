@@ -22,7 +22,7 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
   background-color: $main-colors;
   border: 1px solid transparent;
   input {
-    padding-left: 15px;
+    padding-left: 1em;
     font-size: 1.2em;
     height: 2.8rem;
   }
@@ -219,7 +219,7 @@ slider figure img {
     padding: 0 0 0.2em 0;
     &::after {
       margin-top: 3px;
-      margin-left: 1.25em;
+      margin-left: 1.35em;
       content: '';
       display: block;
       width: 0;
@@ -228,7 +228,7 @@ slider figure img {
       transition: width 0.8s;
     }
     &:hover::after {
-      width: 67%;
+      width: 66%;
     }
     img {
       padding-right: 0.4em;
@@ -271,14 +271,13 @@ ul.dropdown {
 
 ///////////////////////////////////////////////////////
 .inscription {
-  position: relative;
-  //background-color: rgba(88, 67, 210, 0.6);
   p {
+    margin-left: auto;
     font-family: 'Dancing Script', cursive;
     color: rgb(235, 235, 235);
     font-size: 4.8em;
-    margin: 2.8em 0em 1.4em 5.5em;
-    //border: 1px solid black;
+    margin: 2.7em 0em 1.5em 5.5em;
+    //border: 1px solid black; 2.6em
   }
 }
 
@@ -286,10 +285,10 @@ ul.dropdown {
 .search {
   border-radius: 5px;
   width: 100%;
-  padding-bottom: 140px;
-  margin-bottom: 12em;
+  padding-bottom: 8.75em;
+  margin-bottom: 192px;
   .form-section {
-    margin-left: 125px;
+    margin-left: 140px;
     .Where {
       @include SearchEnginer-style;
       float: left;
@@ -299,7 +298,7 @@ ul.dropdown {
       display: inline-block;
       @include SearchEnginer-style;
       float: left;
-      padding: 8px;
+      padding: 0.5em;
       width: 17%;
       input {
         width: 6em;
@@ -307,15 +306,15 @@ ul.dropdown {
         font-family: $font-inputs;
       }
       .input-group-addon > img {
-        width: 40px;
+        width: 40px; /// media query
         float: right;
-        padding: 4px;
+        padding: 0.25em;
       }
     }
     .check_out {
       @include SearchEnginer-style;
       float: left;
-      padding: 8px;
+      padding: 0.5em;
       width: 17%;
       input {
         width: 6em;
@@ -323,18 +322,18 @@ ul.dropdown {
         font-family: $font-inputs;
       }
       .input-group-addon > img {
-        width: 40px;
+        width: 40px; /// media query
         float: right;
-        padding: 4px;
+        padding: 0.25em;
       }
     }
     .Number_guests {
       @include SearchEnginer-style;
       float: left;
-      padding: 10px;
+      padding: 0.65em; // Trzeba bedzie poprawić na mediaquery
       .form-control {
-        width: 140px;
-        height: 46px;
+        width: 8.75em;
+        height: 2.875em;
         font-size: 1em;
         font-family: $font-inputs;
       }
@@ -343,8 +342,8 @@ ul.dropdown {
       display: inline-block;
       .btn-default {
         margin: 0 auto;
-        font-size: 1rem;
-        padding: 1.45rem 2rem;
+        font-size: 1em; // media query
+        padding: 1.45em 2em;
         display: block;
         background-color: $btn-colors;
         border: 2px solid transparent;
