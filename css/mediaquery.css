@@ -6,7 +6,7 @@
   display: none; }
 
 /* 1280 x 640 */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1355px) {
   html {
     font-size: 15px; }
   #Pic1Res1,
