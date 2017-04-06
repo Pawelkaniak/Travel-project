@@ -311,8 +311,8 @@ ul.dropdown li a p {
 
 .search .form-section .button_search .btn-default {
   margin: 0 auto;
-  font-size: 1rem;
-  padding: 1.45rem 2rem;
+  font-size: 1em;
+  padding: 1.45em 2em;
   display: block;
   background-color: #5843d2;
   border: 2px solid transparent;
