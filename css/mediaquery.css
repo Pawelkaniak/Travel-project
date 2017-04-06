@@ -1,0 +1,17 @@
+/*.resp_pic2_1{
+    display: none;
+  }*/
+@media only screen and (max-width: 1355px) {
+  header {
+    font-size: 12px; }
+  section.offers_explore {
+    font-size: 12px; }
+  /*.resp_pic2{
+      display: none;
+    }
+
+    .resp_pic2_1{
+        max-width: 350px;
+        margin: 0 0 -0.2em 0;
+      display: inherit;
+    }*/ }

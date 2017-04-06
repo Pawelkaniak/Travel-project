@@ -5,10 +5,13 @@
   <meta charset="UTF-8" />
   <title>Travendo</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="css/datapicker.css" rel="stylesheet">
+  <link  rel="stylesheet" href="css/datapicker.css">
+  <link rel="stylesheet" href="css/mediaquery.css"
   <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </script>
@@ -37,10 +40,10 @@
         </ul>
       </nav>
       <div class="account container_flex">
-        <a id="colorSi" href="#"><img src="images/icons/user-icon.png"><span>Sing in</span></a>
+        <a id="colorSi" href="#"><img id="prof_icon" src="images/icons/forum-user1.png"><span>Sing in</span></a>
         <ul class="dropdown  container_flex">
           <li>
-            <a class="container_flex" href="#"><img src="images/SVG-icons/profile-icons.svg" alt="profile-icon"><p>Profile</p> </a>
+            <a class="container_flex" href="#"><img id="profile_icon" src="images/SVG-icons/profile-icons.svg" alt="profile-icon"><p>Profile</p> </a>
           </li>
           <li>
             <a class="container_flex" href="#"><img src="images/SVG-icons/travels-icons.svg" alt="travel-icon"><p>Travels</p></a>
@@ -153,7 +156,7 @@
           <h2>Croatia <span></span></h2>
           <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
       </figure>
-      <figure class="effect-img"> <img src="images/places/barcelona-2_500.png" class="resp_pic">
+      <figure class="effect-img"> <img src="images/places/barcelona-2_500.png" class="resp_pic"> <!--<img src="images/places/smallplaces/barcelona-2_350.png" class="resp_pic2_1">-->
         <figcaption>
           <h2>Spain <span></span></h2>
           <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
@@ -219,21 +222,26 @@
       <div class="become_member main_width">
         <div class="support_member flex_member member_text">
           <h2>Supporter</h2>
-          <p class="text_mb1">Great experience by volunteer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quaerat?</p>
+          <p class="text_mb1">Great experience by volunteer, creating a team with members from around the world!</p>
           <h3>Do you want to ?</h3>
           <ul>
-            <li>1.Kasia Loremipsum</li>
-            <li>2.Basia Loremipsum</li>
-            <li>3.Asia Loremipsum</li>
-            <li>4.Ania Loremipsum</li>
-            <li>5.Kaja Loremipsum</li>
+            <li>1.Experience the adventure
+            </li>
+            <li>2.Meet Great people
+            </li>
+            <li>3.Work with Travendo team
+            </li>
+            <li>4.Spend your holidays in an unusual way</li>
+            <li>5.Acquire organizational skills
+            </li>
           </ul>
-          <p class="text_mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, impedit?</p>
+          <p class="text_mb2">If you want more information - Click the button!
+          </p>
           <button class="join_us"><a href="javascript:void(0)" onclick="method(); return false">Join us</a></button>
         </div>
         <div class="support_member flex_member member_text">
           <h2>Organizer</h2>
-          <p class="text_mb1">Get experience organizing big Lorem ipsum dolor sit amet, consectetur. Explicabo, numquam. events</p>
+          <p class="text_mb1">Get experience organizing big events in beautiful places in the world.</p>
           <h3>If you have</h3>
           <ul>
             <li>1.Marek Loremipsum</li>
@@ -242,7 +250,8 @@
             <li>4.Paweł Loremipsum</li>
             <li>5.Piotrek Loremipsum</li>
           </ul>
-          <p class="text_mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, ducimus!</p>
+          <p class="text_mb2">Join us, if you feel that is what you are looking for!
+          </p>
           <button class="join_us"><a href="javascript:void(0)" onclick="method(); return false">Join us</a></button>
         </div>
       </div>

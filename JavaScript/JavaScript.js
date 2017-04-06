@@ -40,18 +40,21 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   });
       
-
-  $('div.airplane_icon').on('click', function check_domain_input() {   
-      $("#dialog").dialog(); // Shows the new alert box.
-
+  
+  /* Change icon in  */
+  $('#colorSi').mouseenter(function( ) {
+    $('#prof_icon').attr("src","images/icons/forum-user2.png");   
+  });
+  $('#colorSi').mouseleave(function( ) {
+    $('#prof_icon').attr("src","images/icons/forum-user1.png");   
   });
   
-  
-  
+  /*$('#colorSi').on( 'click', function( ) {
+    $('#prof_icon').attr("src","images/icons/forum-user2.png");   
+  });
+*/
   
   /* datapickers in JQuery */
-  
-
   $('#check_in').datepicker({
     inline: true,
     firstDay: 1,
