@@ -17,16 +17,6 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 
 //** Mixins **// 
 
-@mixin SearchEnginer-style {
-  display: inline-block;
-  background-color: $main-colors;
-  border: 1px solid transparent;
-  input {
-    padding-left: 15px;
-    font-size: 1.2em;
-    height: 2.8rem;
-  }
-}
 
 @mixin clearfix {
   &:before {
@@ -74,6 +64,11 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 /*Header SECTION*/
 
 ////////////////////////////////////////////////////////////////////////////////////////
+
+header {
+  width: 100%;
+  height: 100%;
+}
 
 
 ///////*** MAIN HEADER SLIDER by css only  ***//////
@@ -271,83 +266,67 @@ ul.dropdown {
 
 ///////////////////////////////////////////////////////
 .inscription {
-  position: relative;
-  //background-color: rgba(88, 67, 210, 0.6);
+  justify-content: center;
   p {
     font-family: 'Dancing Script', cursive;
     color: rgb(235, 235, 235);
+    //color: $btn-colors;
+    //background-color: $main-colors;
     font-size: 4.8em;
-    margin: 2.8em 0em 1.4em 5.5em;
-    //border: 1px solid black;
+    margin-top: 2.6em;
+    margin-bottom: 0.2em;
   }
 }
 
 // Travel oferts - search enginer 
 .search {
-  border-radius: 5px;
-  width: 100%;
-  padding-bottom: 140px;
-  margin-bottom: 12em;
+  margin-top: 5em;
+  margin-bottom: 20em;
   .form-section {
-    margin-left: 125px;
+    font-size: 1.2em;
+    height: 3.5em;
+    padding: 0 0 0 0.5em;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-colors;
     .Where {
-      @include SearchEnginer-style;
-      float: left;
-      padding: 0.5em;
+      padding-right: 0.6em;
+      input {
+        font-size: 1em;
+        padding: 0.7em;
+        width: 10em;
+      }
     }
     .check_in {
-      display: inline-block;
-      @include SearchEnginer-style;
-      float: left;
-      padding: 8px;
-      width: 17%;
+      padding-right: 0.6em;
       input {
-        width: 6em;
-        float: left;
-        font-family: $font-inputs;
-      }
-      .input-group-addon > img {
-        width: 40px;
-        float: right;
-        padding: 4px;
+        font-size: 1em;
+        padding: 0.7em;
+        width: 5em;
       }
     }
     .check_out {
-      @include SearchEnginer-style;
-      float: left;
-      padding: 8px;
-      width: 17%;
+      padding-right: 0.6em;
       input {
-        width: 6em;
-        float: left;
-        font-family: $font-inputs;
-      }
-      .input-group-addon > img {
-        width: 40px;
-        float: right;
-        padding: 4px;
+        font-size: 1em;
+        padding: 0.7em;
+        width: 5em;
       }
     }
-    .Number_guests {
-      @include SearchEnginer-style;
-      float: left;
-      padding: 9.5px;
-      .form-control {
-        width: 140px;
-        height: 46px;
-        font-size: 1em;
-        font-family: $font-inputs;
+    .number_guests {
+      padding-right: 0.6em;
+      select {
+        font-size: 0.8em;
+        padding: 0.9em;
       }
     }
     .button_search {
-      display: inline-block;
       .btn-default {
-        margin: 0 auto;
-        font-size: 1em;
-        padding: 1.45em 2em;
+        font-size: 0.8em;
+        padding: 1.55em 2em;
         display: block;
         background-color: $btn-colors;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         color: #ffffff;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
@@ -359,10 +338,19 @@ ul.dropdown {
         }
       }
     }
+    .form-group {
+      align-items: center;
+      justify-content: center;
+      .input-group-addon { 
+        padding-left: 0.5em;
+        img {
+          width: 2.2em;
+          height: 2.2em;
+        }
+      }
+    }
   }
 }
-
-
 /*prospect SECTION*/
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -493,10 +481,6 @@ ul.dropdown {
   max-width: 1350px;
 }
 
-.resp_pic {
-  max-width: 440px;
-  margin: 0 0 -0.2em 0;
-}
 
 .travel_offers {
   width: 100%;
@@ -506,6 +490,11 @@ figure.effect-img {
   background-color: #85144b;
   margin: 0.2rem 0.2rem;
   position: relative;
+  font-size: 16px;
+  .resp_pic {
+    max-width: 27.5em;
+    margin: 0 0 -0.2em 0;
+  }
   /*img {}*/
   figcaption {
     visibility: hidden;

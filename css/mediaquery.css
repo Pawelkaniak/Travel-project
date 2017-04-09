@@ -9,30 +9,36 @@
 @media only screen and (max-width: 1365px) {
   html {
     font-size: 15px; }
-  #Pic1Res1,
-  #Pic2Res1,
-  #Pic3Res1,
-  #Pic4Res1,
-  #Pic5Res1 {
+  html figure.effect-img {
+    font-size: 14px; }
+  html #Pic1Res1,
+  html #Pic2Res1,
+  html #Pic3Res1,
+  html #Pic4Res1,
+  html #Pic5Res1 {
     display: none; }
-  #Pic1Res2,
-  #Pic2Res2,
-  #Pic3Res2,
-  #Pic4Res2,
-  #Pic5Res2 {
+  html #Pic1Res2,
+  html #Pic2Res2,
+  html #Pic3Res2,
+  html #Pic4Res2,
+  html #Pic5Res2 {
     display: inherit; }
-  .inscription p {
+  html .btn-default {
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 23.2px 30px; }
+  html .btn-default .inscription p {
     margin: 2em 0em 1.4em 5.5em; }
-  .ui-datepicker {
+  html .btn-default .ui-datepicker {
     width: 224px;
     padding: 0.5em 0.4em 0 0.4em;
     margin-top: 0.5em;
     font-size: 0.6em; }
-  .ui-datepicker .ui-datepicker-header {
+  html .btn-default .ui-datepicker .ui-datepicker-header {
     padding-bottom: 1.1em; }
-  .ui-datepicker-calendar th {
+  html .btn-default .ui-datepicker-calendar th {
     padding-top: 10px;
     padding-bottom: 10px; }
-  .ui-datepicker-calendar td {
+  html .btn-default .ui-datepicker-calendar td {
     padding: 0 5px;
     line-height: 22px; } }

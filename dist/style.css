@@ -51,6 +51,10 @@ table {
   max-width: 1260px; }
 
 /*Header SECTION*/
+header {
+  width: 100%;
+  height: 100%; }
+
 .slider {
   width: 100%;
   height: 100%;
@@ -212,110 +216,64 @@ ul.dropdown li a p {
   padding-left: 0.3em; }
 
 .inscription {
-  position: relative; }
+  justify-content: center; }
 
 .inscription p {
   font-family: 'Dancing Script', cursive;
   color: #ebebeb;
   font-size: 4.8em;
-  margin: 2.8em 0em 1.4em 5.5em; }
+  margin-top: 2.6em;
+  margin-bottom: 0.2em; }
 
 .search {
-  border-radius: 5px;
-  width: 100%;
-  padding-bottom: 140px;
-  margin-bottom: 12em; }
+  margin-top: 5em;
+  margin-bottom: 20em; }
 
 .search .form-section {
-  margin-left: 125px; }
+  font-size: 1.2em;
+  height: 3.5em;
+  padding: 0 0 0 0.5em;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(235, 235, 235, 0.4); }
 
 .search .form-section .Where {
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 0.5em; }
+  padding-right: 0.6em; }
 
 .search .form-section .Where input {
-  padding-left: 15px;
-  font-size: 1.2em;
-  height: 2.8rem; }
+  font-size: 1em;
+  padding: 0.7em;
+  width: 10em; }
 
 .search .form-section .check_in {
-  display: inline-block;
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 8px;
-  width: 17%; }
+  padding-right: 0.6em; }
 
 .search .form-section .check_in input {
-  padding-left: 15px;
-  font-size: 1.2em;
-  height: 2.8rem; }
-
-.search .form-section .check_in input {
-  width: 6em;
-  float: left;
-  font-family: "Lato", sans-serif; }
-
-.search .form-section .check_in .input-group-addon > img {
-  width: 40px;
-  float: right;
-  padding: 4px; }
+  font-size: 1em;
+  padding: 0.7em;
+  width: 5em; }
 
 .search .form-section .check_out {
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 8px;
-  width: 17%; }
+  padding-right: 0.6em; }
 
 .search .form-section .check_out input {
-  padding-left: 15px;
-  font-size: 1.2em;
-  height: 2.8rem; }
-
-.search .form-section .check_out input {
-  width: 6em;
-  float: left;
-  font-family: "Lato", sans-serif; }
-
-.search .form-section .check_out .input-group-addon > img {
-  width: 40px;
-  float: right;
-  padding: 4px; }
-
-.search .form-section .Number_guests {
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 9.5px; }
-
-.search .form-section .Number_guests input {
-  padding-left: 15px;
-  font-size: 1.2em;
-  height: 2.8rem; }
-
-.search .form-section .Number_guests .form-control {
-  width: 140px;
-  height: 46px;
   font-size: 1em;
-  font-family: "Lato", sans-serif; }
+  padding: 0.7em;
+  width: 5em; }
 
-.search .form-section .button_search {
-  display: inline-block; }
+.search .form-section .number_guests {
+  padding-right: 0.6em; }
+
+.search .form-section .number_guests select {
+  font-size: 0.8em;
+  padding: 0.9em; }
 
 .search .form-section .button_search .btn-default {
-  margin: 0 auto;
-  font-size: 1em;
-  padding: 1.45em 2em;
+  font-size: 0.8em;
+  padding: 1.55em 2em;
   display: block;
   background-color: #5843d2;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   color: #ffffff;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -325,6 +283,17 @@ ul.dropdown li a p {
   background-color: rgba(235, 235, 235, 0.4);
   color: #5843d2;
   border-color: #5843d2; }
+
+.search .form-section .form-group {
+  align-items: center;
+  justify-content: center; }
+
+.search .form-section .form-group .input-group-addon {
+  padding-left: 0.5em; }
+
+.search .form-section .form-group .input-group-addon img {
+  width: 2.2em;
+  height: 2.2em; }
 
 /*prospect SECTION*/
 .prospect {
@@ -467,10 +436,6 @@ ul.dropdown li a p {
   content: space-between;
   max-width: 1350px; }
 
-.resp_pic {
-  max-width: 440px;
-  margin: 0 0 -0.2em 0; }
-
 .travel_offers {
   width: 100%; }
 
@@ -478,7 +443,12 @@ figure.effect-img {
   background-color: #85144b;
   margin: 0.2rem 0.2rem;
   position: relative;
+  font-size: 16px;
   /*img {}*/ }
+
+figure.effect-img .resp_pic {
+  max-width: 27.5em;
+  margin: 0 0 -0.2em 0; }
 
 figure.effect-img figcaption {
   visibility: hidden;
