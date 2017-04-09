@@ -1,3 +1,35 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 #Pic1Res2,
 #Pic2Res2,
 #Pic3Res2,
@@ -8,31 +40,59 @@
 /* 1280 x 640 */
 @media only screen and (max-width: 1365px) {
   html {
-    font-size: 15px; }
-  #Pic1Res1,
-  #Pic2Res1,
-  #Pic3Res1,
-  #Pic4Res1,
-  #Pic5Res1 {
+    font-size: 15px;
+    /* .search {
+      .form-section {
+        .Where {
+          padding: 0.53em;
+        .Number_guests {
+        //padding: 8.7px;
+        .form-control {
+          width: 140px;
+          //height: 46px;
+          //font-size: 1em;
+            }
+          }
+        .button_search {
+          .btn-default {
+            margin: 0 auto;
+            font-size: 15px;
+            padding: 22px 32px;
+              }
+            }
+          }
+        }
+      }*/ }
+  html figure.effect-img {
+    font-size: 14px; }
+  html #Pic1Res1,
+  html #Pic2Res1,
+  html #Pic3Res1,
+  html #Pic4Res1,
+  html #Pic5Res1 {
     display: none; }
-  #Pic1Res2,
-  #Pic2Res2,
-  #Pic3Res2,
-  #Pic4Res2,
-  #Pic5Res2 {
+  html #Pic1Res2,
+  html #Pic2Res2,
+  html #Pic3Res2,
+  html #Pic4Res2,
+  html #Pic5Res2 {
     display: inherit; }
-  .inscription p {
+  html .btn-default {
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 23.2px 30px; }
+  html .btn-default .inscription p {
     margin: 2em 0em 1.4em 5.5em; }
-  .ui-datepicker {
+  html .btn-default .ui-datepicker {
     width: 224px;
     padding: 0.5em 0.4em 0 0.4em;
     margin-top: 0.5em;
     font-size: 0.6em; }
-  .ui-datepicker .ui-datepicker-header {
+  html .btn-default .ui-datepicker .ui-datepicker-header {
     padding-bottom: 1.1em; }
-  .ui-datepicker-calendar th {
+  html .btn-default .ui-datepicker-calendar th {
     padding-top: 10px;
     padding-bottom: 10px; }
-  .ui-datepicker-calendar td {
+  html .btn-default .ui-datepicker-calendar td {
     padding: 0 5px;
     line-height: 22px; } }

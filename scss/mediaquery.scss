@@ -1,3 +1,4 @@
+@import "reset";
 @mixin mediaquery {
 
 
@@ -13,9 +14,6 @@
 
   }
 
-
-
-
   #Pic1Res2,
   #Pic2Res2,
   #Pic3Res2,
@@ -27,9 +25,33 @@
   @media only screen and (max-width: 1365px) { 
     html {
       font-size: 15px;
-    }
-    header {
-    }
+      figure.effect-img {
+        font-size: 14px;
+      }
+   /* .search {
+      .form-section {
+        .Where {
+          padding: 0.53em;
+        .Number_guests {
+        //padding: 8.7px;
+        .form-control {
+          width: 140px;
+          //height: 46px;
+          //font-size: 1em;
+            }
+          }
+        .button_search {
+          .btn-default {
+            margin: 0 auto;
+            font-size: 15px;
+            padding: 22px 32px;
+              }
+            }
+          }
+        }
+      }*/
+
+      
     // ** slider **\\
 
     #Pic1Res1,
@@ -46,7 +68,10 @@
     #Pic5Res2 {
       display: inherit;
     }
-
+    .btn-default {
+      margin: 0 auto;
+      font-size: 15px;
+      padding: 23.2px 30px;
 
     .inscription {
       p {
@@ -70,13 +95,14 @@
     .ui-datepicker-calendar td {
       padding: 0 5px;
       line-height: 22px;
+        }
+      }
     }
   }
-
   // *for images* \\
   @media only screen and (max-width: 1355px) { 
-
+    }
   }  
-}
+
 @include mediaquery;
 //1355
