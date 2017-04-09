@@ -1,35 +1,3 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: "";
-  content: none; }
-
-q:before, q:after {
-  content: "";
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 #Pic1Res2,
 #Pic2Res2,
 #Pic3Res2,
@@ -40,29 +8,7 @@ table {
 /* 1280 x 640 */
 @media only screen and (max-width: 1365px) {
   html {
-    font-size: 15px;
-    /* .search {
-      .form-section {
-        .Where {
-          padding: 0.53em;
-        .Number_guests {
-        //padding: 8.7px;
-        .form-control {
-          width: 140px;
-          //height: 46px;
-          //font-size: 1em;
-            }
-          }
-        .button_search {
-          .btn-default {
-            margin: 0 auto;
-            font-size: 15px;
-            padding: 22px 32px;
-              }
-            }
-          }
-        }
-      }*/ }
+    font-size: 15px; }
   html figure.effect-img {
     font-size: 14px; }
   html #Pic1Res1,

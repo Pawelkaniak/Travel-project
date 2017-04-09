@@ -51,6 +51,10 @@ table {
   max-width: 1260px; }
 
 /*Header SECTION*/
+header {
+  width: 100%;
+  height: 100%; }
+
 .slider {
   width: 100%;
   height: 100%;
@@ -118,8 +122,7 @@ slider figure img {
   display: inline-block;
   color: #FFFAFA;
   padding: 20px 5px 5px 5px;
-  font-size: 1.2em;
-  margin-bottom: 10em; }
+  font-size: 1.2em; }
 
 .head_nav nav li {
   display: inline-block;
@@ -219,11 +222,12 @@ ul.dropdown li a p {
   font-family: 'Dancing Script', cursive;
   color: #ebebeb;
   font-size: 4.8em;
+  margin-top: 2.6em;
   margin-bottom: 0.2em; }
 
 .search {
   margin-top: 5em;
-  margin-bottom: 16em; }
+  margin-bottom: 20em; }
 
 .search .form-section {
   font-size: 1.2em;
@@ -293,15 +297,16 @@ ul.dropdown li a p {
 
 /*prospect SECTION*/
 .prospect {
-  padding-top: 10em; }
+  margin-top: 60px;
+  padding-top: 20px; }
 
 .prospect .first_proposal {
   display: inline-block;
   width: 33%; }
 
 .prospect .first_proposal .circle {
-  width: 13.75em;
-  height: 13.75em;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -321,8 +326,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .second_proposal .circle {
-  width: 13.75em;
-  height: 13.75em;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -342,8 +347,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .third_proposal .circle {
-  width: 13.75em;
-  height: 13.75em;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
