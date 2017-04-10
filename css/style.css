@@ -126,7 +126,8 @@ slider figure img {
 
 .head_nav nav li {
   display: inline-block;
-  padding: 0px 10px 0px 5px; }
+  padding: 0px 10px 0px 5px;
+  margin-bottom: 11em; }
 
 .head_nav nav li a {
   text-decoration: none;
@@ -184,8 +185,8 @@ slider figure img {
 
 .account #colorSi img {
   padding-right: 0.4em;
-  width: 24px;
-  height: 22px; }
+  width: 1.5em;
+  height: 1.4em; }
 
 ul.dropdown {
   -webkit-flex-direction: column;
@@ -222,12 +223,10 @@ ul.dropdown li a p {
   font-family: 'Dancing Script', cursive;
   color: #ebebeb;
   font-size: 4.8em;
-  margin-top: 2.6em;
   margin-bottom: 0.2em; }
 
 .search {
-  margin-top: 5em;
-  margin-bottom: 20em; }
+  margin-top: 5em; }
 
 .search .form-section {
   font-size: 1.2em;
@@ -251,7 +250,7 @@ ul.dropdown li a p {
 .search .form-section .check_in input {
   font-size: 1em;
   padding: 0.7em;
-  width: 5em; }
+  width: 5.5em; }
 
 .search .form-section .check_out {
   padding-right: 0.6em; }
@@ -259,7 +258,7 @@ ul.dropdown li a p {
 .search .form-section .check_out input {
   font-size: 1em;
   padding: 0.7em;
-  width: 5em; }
+  width: 5.5em; }
 
 .search .form-section .number_guests {
   padding-right: 0.6em; }
@@ -296,6 +295,9 @@ ul.dropdown li a p {
   height: 2.2em; }
 
 /*prospect SECTION*/
+.landing_page {
+  padding-top: 17em; }
+
 .prospect {
   margin-top: 60px;
   padding-top: 20px; }
@@ -305,8 +307,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .first_proposal .circle {
-  width: 220px;
-  height: 220px;
+  width: 13.75em;
+  height: 13.75em;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -326,8 +328,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .second_proposal .circle {
-  width: 220px;
-  height: 220px;
+  width: 13.75em;
+  height: 13.75em;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -347,8 +349,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .third_proposal .circle {
-  width: 220px;
-  height: 220px;
+  width: 13.75em;
+  height: 13.75em;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -375,7 +377,7 @@ ul.dropdown li a p {
   padding: 90px 0px 0px 24px;
   color: white;
   font-weight: 700;
-  font-size: 22px; }
+  font-size: 1.375em; }
 
 .circl-info p {
   font-size: 18px;

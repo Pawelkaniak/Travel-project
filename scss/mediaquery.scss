@@ -4,15 +4,97 @@
   @media (max-width: 399px) {
 
   }
-
-  @media (min-width: 400px) and (max-width: 799px) {
-
-  }
-
-  @media (min-width: 800px) {
+  /* 425 x  */
+  @media (min-width: 400px) and (max-width: 425px) {
 
   }
+  /* 768 x 576 Tablet */
+  @media only screen and (max-width: 850px) {
+    
+    .head_nav,
+    .offers_explore,
+    .travel_offers,
+    .footer_info,
+    .membership,
+    .terms_privacy
+    {
+      font-size: 12px;
+    }
+    
+    header {
+      .head_nav{
+      padding-bottom: 230px;
+      }
+      .slider{
+      display: none;
+      }
+      background-image: url(../images/background/ancient-1869218_1024.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .offers_explore {
+      margin-top: 0;
+      .travel_offers {
+        figure.effect-img {
+          font-size: 9px !important;
+          }
+        }
+      }
+    .landing_page {
+    display: none;
+    }
+  }
 
+  @media only screen and (max-width: 950px) {
+    header {
+      .head_nav{
+        padding-bottom: 230px;
+      }
+      .slider{
+        display: none;
+      }
+      background-image: url(../images/background/ancient-1869218_1024.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .landing_page {
+      display: none !important;
+    }
+    section {
+    .travel_offers {
+      figure.effect-img {
+        font-size: 10px !important;
+        }
+      }
+    }
+  }
+  /* 1024 x 600 Laptop */
+  @media only screen and (max-width: 1024px) { 
+    header,
+    section,
+    footer {
+      font-size: 14px;
+    }
+    .travel_offers {
+      figure.effect-img {
+        font-size: 11px !important;
+      
+    }
+  }
+}
+  @media screen and (max-width: 1176px) { 
+    section {
+      .travel_offers {
+        figure.effect-img {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  
   #Pic1Res2,
   #Pic2Res2,
   #Pic3Res2,
@@ -20,15 +102,14 @@
   #Pic5Res2 {
     display: none;
   }
-  /* 1280 x 640 */
-  @media only screen and (max-width: 1365px) { 
+  /* 1366 x 672 Laptop L*/
+  @media only screen and (max-width: 1366px) { 
     html {
       font-size: 15px;
       figure.effect-img {
         font-size: 14px;
       }
-   
-      
+     
     // ** slider **\\
 
     #Pic1Res1,
@@ -45,16 +126,8 @@
     #Pic5Res2 {
       display: inherit;
     }
-    .btn-default {
-      margin: 0 auto;
-      font-size: 15px;
-      padding: 23.2px 30px;
 
-    .inscription {
-      p {
-        margin: 2em 0em 1.4em 5.5em;
-      }
-    }
+
     //** datepicker **//
     .ui-datepicker {
       width: 224px;
@@ -72,14 +145,10 @@
     .ui-datepicker-calendar td {
       padding: 0 5px;
       line-height: 22px;
-        }
       }
     }
   }
-  // *for images* \\
-  @media only screen and (max-width: 1355px) { 
-    }
-  }  
+}  
 
 @include mediaquery;
 //1355

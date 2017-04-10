@@ -1,3 +1,57 @@
+/* 425 x  */
+/* 768 x 576 Tablet */
+@media only screen and (max-width: 850px) {
+  .head_nav,
+  .offers_explore,
+  .travel_offers,
+  .footer_info,
+  .membership,
+  .terms_privacy {
+    font-size: 12px; }
+  header {
+    background-image: url(../images/background/ancient-1869218_1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  header .head_nav {
+    padding-bottom: 230px; }
+  header .slider {
+    display: none; }
+  .offers_explore {
+    margin-top: 0; }
+  .offers_explore .travel_offers figure.effect-img {
+    font-size: 9px !important; }
+  .landing_page {
+    display: none; } }
+
+@media only screen and (max-width: 950px) {
+  header {
+    background-image: url(../images/background/ancient-1869218_1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  header .head_nav {
+    padding-bottom: 230px; }
+  header .slider {
+    display: none; }
+  .landing_page {
+    display: none !important; }
+  section .travel_offers figure.effect-img {
+    font-size: 10px !important; } }
+
+/* 1024 x 600 Laptop */
+@media only screen and (max-width: 1024px) {
+  header,
+  section,
+  footer {
+    font-size: 14px; }
+  .travel_offers figure.effect-img {
+    font-size: 11px !important; } }
+
+@media screen and (max-width: 1176px) {
+  section .travel_offers figure.effect-img {
+    font-size: 12px; } }
+
 #Pic1Res2,
 #Pic2Res2,
 #Pic3Res2,
@@ -5,8 +59,8 @@
 #Pic5Res2 {
   display: none; }
 
-/* 1280 x 640 */
-@media only screen and (max-width: 1365px) {
+/* 1366 x 672 Laptop L*/
+@media only screen and (max-width: 1366px) {
   html {
     font-size: 15px; }
   html figure.effect-img {
@@ -23,22 +77,16 @@
   html #Pic4Res2,
   html #Pic5Res2 {
     display: inherit; }
-  html .btn-default {
-    margin: 0 auto;
-    font-size: 15px;
-    padding: 23.2px 30px; }
-  html .btn-default .inscription p {
-    margin: 2em 0em 1.4em 5.5em; }
-  html .btn-default .ui-datepicker {
+  html .ui-datepicker {
     width: 224px;
     padding: 0.5em 0.4em 0 0.4em;
     margin-top: 0.5em;
     font-size: 0.6em; }
-  html .btn-default .ui-datepicker .ui-datepicker-header {
+  html .ui-datepicker .ui-datepicker-header {
     padding-bottom: 1.1em; }
-  html .btn-default .ui-datepicker-calendar th {
+  html .ui-datepicker-calendar th {
     padding-top: 10px;
     padding-bottom: 10px; }
-  html .btn-default .ui-datepicker-calendar td {
+  html .ui-datepicker-calendar td {
     padding: 0 5px;
     line-height: 22px; } }
