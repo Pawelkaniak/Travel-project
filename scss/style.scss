@@ -17,16 +17,6 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 
 //** Mixins **// 
 
-@mixin SearchEnginer-style {
-  display: inline-block;
-  background-color: $main-colors;
-  border: 1px solid transparent;
-  input {
-    padding-left: 1em;
-    font-size: 1.2em;
-    height: 2.8rem;
-  }
-}
 
 @mixin clearfix {
   &:before {
@@ -68,12 +58,14 @@ $btn-colors: rgba(88, 67, 210, 1); //rgb(86, 52, 209); rgb(99,230,233);
 
 
 
-
-
-
 /*Header SECTION*/
 
 ////////////////////////////////////////////////////////////////////////////////////////
+
+header {
+  width: 100%;
+  height: 100%;
+}
 
 
 ///////*** MAIN HEADER SLIDER by css only  ***//////
@@ -172,6 +164,7 @@ slider figure img {
     li {
       display: inline-block;
       padding: 0px 10px 0px 5px;
+      margin-bottom: 11em;
       a {
         text-decoration: none;
         color: $menu-colors;
@@ -219,7 +212,7 @@ slider figure img {
     padding: 0 0 0.2em 0;
     &::after {
       margin-top: 3px;
-      margin-left: 1.35em;
+      margin-left: 1.25em;
       content: '';
       display: block;
       width: 0;
@@ -228,12 +221,12 @@ slider figure img {
       transition: width 0.8s;
     }
     &:hover::after {
-      width: 66%;
+      width: 67%;
     }
     img {
       padding-right: 0.4em;
-      width: 24px;
-      height: 22px;
+      width: 1.5em;
+      height: 1.4em;
     }
   }
 }
@@ -271,82 +264,65 @@ ul.dropdown {
 
 ///////////////////////////////////////////////////////
 .inscription {
+  justify-content: center;
   p {
-    margin-left: auto;
     font-family: 'Dancing Script', cursive;
     color: rgb(235, 235, 235);
+    //color: $btn-colors;
+    //background-color: $main-colors;
     font-size: 4.8em;
-    margin: 2.7em 0em 1.5em 5.5em;
-    //border: 1px solid black; 2.6em
+    margin-bottom: 0.2em;
   }
 }
 
 // Travel oferts - search enginer 
 .search {
-  border-radius: 5px;
-  width: 100%;
-  padding-bottom: 8.75em;
-  margin-bottom: 192px;
+  margin-top: 5em;
   .form-section {
-    margin-left: 140px;
+    font-size: 1.2em;
+    height: 3.5em;
+    padding: 0 0 0 0.5em;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-colors;
     .Where {
-      @include SearchEnginer-style;
-      float: left;
-      padding: 0.5em;
+      padding-right: 0.6em;
+      input {
+        font-size: 1em;
+        padding: 0.7em;
+        width: 10em;
+      }
     }
     .check_in {
-      display: inline-block;
-      @include SearchEnginer-style;
-      float: left;
-      padding: 0.5em;
-      width: 17%;
+      padding-right: 0.6em;
       input {
-        width: 6em;
-        float: left;
-        font-family: $font-inputs;
-      }
-      .input-group-addon > img {
-        width: 40px; /// media query
-        float: right;
-        padding: 0.25em;
+        font-size: 1em;
+        padding: 0.7em;
+        width: 5.5em;
       }
     }
     .check_out {
-      @include SearchEnginer-style;
-      float: left;
-      padding: 0.5em;
-      width: 17%;
+      padding-right: 0.6em;
       input {
-        width: 6em;
-        float: left;
-        font-family: $font-inputs;
-      }
-      .input-group-addon > img {
-        width: 40px; /// media query
-        float: right;
-        padding: 0.25em;
+        font-size: 1em;
+        padding: 0.7em;
+        width: 5.5em;
       }
     }
-    .Number_guests {
-      @include SearchEnginer-style;
-      float: left;
-      padding: 0.6em; // Trzeba bedzie poprawić na mediaquery
-      .form-control {
-        width: 8.75em;
-        height: 2.875em;
-        font-size: 1em;
-        font-family: $font-inputs;
+    .number_guests {
+      padding-right: 0.6em;
+      select {
+        font-size: 0.8em;
+        padding: 0.9em;
       }
     }
     .button_search {
-      display: inline-block;
       .btn-default {
-        margin: 0 auto;
-        font-size: 1em; // media query
-        padding: 1.45em 2em;
+        font-size: 0.8em;
+        padding: 1.55em 2em;
         display: block;
         background-color: $btn-colors;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         color: #ffffff;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
@@ -358,14 +334,24 @@ ul.dropdown {
         }
       }
     }
+    .form-group {
+      align-items: center;
+      justify-content: center;
+      .input-group-addon { 
+        padding-left: 0.5em;
+        img {
+          width: 2.2em;
+          height: 2.2em;
+        }
+      }
+    }
   }
 }
-
-
 /*prospect SECTION*/
 
 ////////////////////////////////////////////////////////////////////////////////////////
 .landing_page {
+  padding-top: 17em;
   //background-color: rgb(99,230,233);
   //height: 70vh;
   //border: 4px solid rgb(99,230,233);
@@ -375,8 +361,8 @@ ul.dropdown {
   display: inline-block;
   width: 33%;
   .circle {
-    width: 220px;
-    height: 220px;
+    width: 13.75em;
+    height: 13.75em;
     border-radius: 50%;
     margin: 0 auto;
     cursor: default;
@@ -419,7 +405,7 @@ ul.dropdown {
     padding: 90px 0px 0px 24px;
     color: white;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375em;
   }
   p {
     font-size: 18px;
@@ -492,10 +478,6 @@ ul.dropdown {
   max-width: 1350px;
 }
 
-.resp_pic {
-  max-width: 440px;
-  margin: 0 0 -0.2em 0;
-}
 
 .travel_offers {
   width: 100%;
@@ -505,6 +487,11 @@ figure.effect-img {
   background-color: #85144b;
   margin: 0.2rem 0.2rem;
   position: relative;
+  font-size: 16px;
+  .resp_pic {
+    max-width: 27.5em;
+    margin: 0 0 -0.2em 0;
+  }
   /*img {}*/
   figcaption {
     visibility: hidden;

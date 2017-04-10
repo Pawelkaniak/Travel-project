@@ -51,6 +51,10 @@ table {
   max-width: 1260px; }
 
 /*Header SECTION*/
+header {
+  width: 100%;
+  height: 100%; }
+
 .slider {
   width: 100%;
   height: 100%;
@@ -122,7 +126,8 @@ slider figure img {
 
 .head_nav nav li {
   display: inline-block;
-  padding: 0px 10px 0px 5px; }
+  padding: 0px 10px 0px 5px;
+  margin-bottom: 11em; }
 
 .head_nav nav li a {
   text-decoration: none;
@@ -167,7 +172,7 @@ slider figure img {
 
 .account #colorSi::after {
   margin-top: 3px;
-  margin-left: 1.35em;
+  margin-left: 1.25em;
   content: '';
   display: block;
   width: 0;
@@ -176,12 +181,12 @@ slider figure img {
   transition: width 0.8s; }
 
 .account #colorSi:hover::after {
-  width: 66%; }
+  width: 67%; }
 
 .account #colorSi img {
   padding-right: 0.4em;
-  width: 24px;
-  height: 22px; }
+  width: 1.5em;
+  height: 1.4em; }
 
 ul.dropdown {
   -webkit-flex-direction: column;
@@ -211,109 +216,63 @@ ul.dropdown li a img {
 ul.dropdown li a p {
   padding-left: 0.3em; }
 
+.inscription {
+  justify-content: center; }
+
 .inscription p {
-  margin-left: auto;
   font-family: 'Dancing Script', cursive;
   color: #ebebeb;
   font-size: 4.8em;
-  margin: 2.7em 0em 1.5em 5.5em; }
+  margin-bottom: 0.2em; }
 
 .search {
-  border-radius: 5px;
-  width: 100%;
-  padding-bottom: 8.75em;
-  margin-bottom: 192px; }
+  margin-top: 5em; }
 
 .search .form-section {
-  margin-left: 140px; }
+  font-size: 1.2em;
+  height: 3.5em;
+  padding: 0 0 0 0.5em;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(235, 235, 235, 0.4); }
 
 .search .form-section .Where {
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 0.5em; }
+  padding-right: 0.6em; }
 
 .search .form-section .Where input {
-  padding-left: 1em;
-  font-size: 1.2em;
-  height: 2.8rem; }
+  font-size: 1em;
+  padding: 0.7em;
+  width: 10em; }
 
 .search .form-section .check_in {
-  display: inline-block;
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 0.5em;
-  width: 17%; }
+  padding-right: 0.6em; }
 
 .search .form-section .check_in input {
-  padding-left: 1em;
-  font-size: 1.2em;
-  height: 2.8rem; }
-
-.search .form-section .check_in input {
-  width: 6em;
-  float: left;
-  font-family: "Lato", sans-serif; }
-
-.search .form-section .check_in .input-group-addon > img {
-  width: 40px;
-  float: right;
-  padding: 0.25em; }
+  font-size: 1em;
+  padding: 0.7em;
+  width: 5.5em; }
 
 .search .form-section .check_out {
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 0.5em;
-  width: 17%; }
+  padding-right: 0.6em; }
 
 .search .form-section .check_out input {
-  padding-left: 1em;
-  font-size: 1.2em;
-  height: 2.8rem; }
-
-.search .form-section .check_out input {
-  width: 6em;
-  float: left;
-  font-family: "Lato", sans-serif; }
-
-.search .form-section .check_out .input-group-addon > img {
-  width: 40px;
-  float: right;
-  padding: 0.25em; }
-
-.search .form-section .Number_guests {
-  display: inline-block;
-  background-color: rgba(235, 235, 235, 0.4);
-  border: 1px solid transparent;
-  float: left;
-  padding: 0.6em; }
-
-.search .form-section .Number_guests input {
-  padding-left: 1em;
-  font-size: 1.2em;
-  height: 2.8rem; }
-
-.search .form-section .Number_guests .form-control {
-  width: 8.75em;
-  height: 2.875em;
   font-size: 1em;
-  font-family: "Lato", sans-serif; }
+  padding: 0.7em;
+  width: 5.5em; }
 
-.search .form-section .button_search {
-  display: inline-block; }
+.search .form-section .number_guests {
+  padding-right: 0.6em; }
+
+.search .form-section .number_guests select {
+  font-size: 0.8em;
+  padding: 0.9em; }
 
 .search .form-section .button_search .btn-default {
-  margin: 0 auto;
-  font-size: 1em;
-  padding: 1.45em 2em;
+  font-size: 0.8em;
+  padding: 1.55em 2em;
   display: block;
   background-color: #5843d2;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   color: #ffffff;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -324,7 +283,21 @@ ul.dropdown li a p {
   color: #5843d2;
   border-color: #5843d2; }
 
+.search .form-section .form-group {
+  align-items: center;
+  justify-content: center; }
+
+.search .form-section .form-group .input-group-addon {
+  padding-left: 0.5em; }
+
+.search .form-section .form-group .input-group-addon img {
+  width: 2.2em;
+  height: 2.2em; }
+
 /*prospect SECTION*/
+.landing_page {
+  padding-top: 17em; }
+
 .prospect {
   margin-top: 60px;
   padding-top: 20px; }
@@ -334,8 +307,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .first_proposal .circle {
-  width: 220px;
-  height: 220px;
+  width: 13.75em;
+  height: 13.75em;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -355,8 +328,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .second_proposal .circle {
-  width: 220px;
-  height: 220px;
+  width: 13.75em;
+  height: 13.75em;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -376,8 +349,8 @@ ul.dropdown li a p {
   width: 33%; }
 
 .prospect .third_proposal .circle {
-  width: 220px;
-  height: 220px;
+  width: 13.75em;
+  height: 13.75em;
   border-radius: 50%;
   margin: 0 auto;
   cursor: default;
@@ -404,7 +377,7 @@ ul.dropdown li a p {
   padding: 90px 0px 0px 24px;
   color: white;
   font-weight: 700;
-  font-size: 22px; }
+  font-size: 1.375em; }
 
 .circl-info p {
   font-size: 18px;
@@ -465,10 +438,6 @@ ul.dropdown li a p {
   content: space-between;
   max-width: 1350px; }
 
-.resp_pic {
-  max-width: 440px;
-  margin: 0 0 -0.2em 0; }
-
 .travel_offers {
   width: 100%; }
 
@@ -476,7 +445,12 @@ figure.effect-img {
   background-color: #85144b;
   margin: 0.2rem 0.2rem;
   position: relative;
+  font-size: 16px;
   /*img {}*/ }
+
+figure.effect-img .resp_pic {
+  max-width: 27.5em;
+  margin: 0 0 -0.2em 0; }
 
 figure.effect-img figcaption {
   visibility: hidden;
