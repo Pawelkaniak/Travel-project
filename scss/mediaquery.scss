@@ -1,14 +1,73 @@
 @mixin mediaquery {
 
-
+  
   @media (max-width: 399px) {
 
   }
   /* 425 x  */
-  @media (min-width: 400px) and (max-width: 425px) {
-
+  @media only screen and (max-width: 426px) {
+    body {
+      .mobile_nav,
+      .inscription,
+      .search,
+      .head_nav,
+      .offers_explore,
+      .footer_info,
+      .membership,
+      .terms_privacy {
+        font-size: 9px !important;
+      }
+    }
+    .airplane_icon {
+      display: none;
+    }
+    .background_member{
+      display: none;
+    }
   }
-  /* 768 x 576 Tablet */
+  @media only screen and (max-width: 506px) {
+    .offers_explore {
+      .travel_offers {
+        figure.effect-img {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+    
+  @media only screen and (max-width: 712px) {
+    header {
+      .mobile_nav {
+        display: flex;
+      }
+      .head_nav {
+      display: none;
+      }
+      .inscription{
+        p {
+          font-size:  3em;
+        }
+      }
+      .search {
+        padding-bottom: 12em;
+        font-size: 12px;
+          .Where {
+            .form-control {
+             width: 20em;
+          }
+        }
+        .check_in,
+        .check_out,
+        .number_guests {
+        display: none;
+        }
+      }
+    }
+  }
+
+  
+  
+  /*  850/768 x 576 Tablet */
   @media only screen and (max-width: 850px) {
     
     .head_nav,
@@ -16,15 +75,11 @@
     .travel_offers,
     .footer_info,
     .membership,
-    .terms_privacy
-    {
+    .terms_privacy {
       font-size: 12px;
     }
     
     header {
-      .head_nav{
-      padding-bottom: 230px;
-      }
       .slider{
       display: none;
       }
@@ -33,7 +88,10 @@
       background-size: cover;
       background-position: center;
     }
-    
+    .search {
+    padding-bottom: 12em;
+    font-size: 12px;
+    }
     .offers_explore {
       margin-top: 0;
       .travel_offers {
@@ -46,14 +104,14 @@
     display: none;
     }
   }
-
+  /* 950px */
   @media only screen and (max-width: 950px) {
     header {
-      .head_nav{
-        padding-bottom: 230px;
-      }
       .slider{
         display: none;
+      }
+      .search {
+        padding-bottom: 12em;
       }
       background-image: url(../images/background/ancient-1869218_1024.jpg);
       background-repeat: no-repeat;
@@ -63,10 +121,13 @@
     .landing_page {
       display: none !important;
     }
+    .offers_explore{
+    margin-top: 0px;
+    }
     section {
-    .travel_offers {
-      figure.effect-img {
-        font-size: 10px !important;
+        .travel_offers {
+          figure.effect-img {
+          font-size: 10px !important;
         }
       }
     }
@@ -85,6 +146,7 @@
     }
   }
 }
+  /* 1176 */
   @media screen and (max-width: 1176px) { 
     section {
       .travel_offers {
