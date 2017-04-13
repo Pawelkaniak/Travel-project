@@ -5,14 +5,10 @@
   <meta charset="UTF-8" />
   <title>Travendo</title>
   <link rel="stylesheet" href="css/style.css">
-  <link  rel="stylesheet" href="css/datapicker.css">
-  <link rel="stylesheet" href="css/mediaquery.css"
-  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/datapicker.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montez|Cookie|Dancing+Script|Kalam" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </script>
@@ -22,49 +18,16 @@
   <header>
     <div class="slider">
       <figure>
-        <div class="slide"><!-- slide 1-->
-
-          <img id="Pic1Res1" src="images/background/beach-1853939_1920.jpg">
-          <img id="Pic1Res2" src="images/background/pexels-beach-1360.jpg">
-
-
-        </div>
-
-
-        <div class="slide"><!-- slide 2-->
-
-          <img id="Pic2Res1" src="images/background/pexels-photo-47478.jpeg">
-          <img id="Pic2Res2" src="images/background/pexels-van_1360.jpg">
-
-
-        </div>
-
-
-        <div class="slide"><!-- slide 3-->
-
-          <img id="Pic3Res1" src="images/background/pexels-photo-230875.jpeg">
-          <img id="Pic3Res2" src="images/background/pexels-crac_1360.jpg">
-
-
-        </div>
-
-
-        <div class="slide"><!-- slide 4-->
-
-          <img id="Pic4Res1" src="images/background/traveller-1149973_1920.jpg">
-          <img id="Pic4Res2" src="images/background/pexels-traveler_1360.jpg">
-
-
-        </div>
-
-
-        <div class="slide"> <!-- slide 5-->
-
-          <img id="Pic5Res1" src="images/background/pexels-photo-195280.jpeg">
-          <img id="Pic5Res2" src="images/background/pexels-jump_1360.jpg">
-
-
-        </div>
+        <div class="slide">
+          <!-- slide 1--><img id="Pic1Res1" src="images/background/beach-1853939_1920.jpg"> <img id="Pic1Res2" src="images/background/pexels-beach-1360.jpg"> </div>
+        <div class="slide">
+          <!-- slide 2--><img id="Pic2Res1" src="images/background/pexels-photo-47478.jpeg"> <img id="Pic2Res2" src="images/background/pexels-van_1360.jpg"> </div>
+        <div class="slide">
+          <!-- slide 3--><img id="Pic3Res1" src="images/background/pexels-photo-230875.jpeg"> <img id="Pic3Res2" src="images/background/pexels-crac_1360.jpg"> </div>
+        <div class="slide">
+          <!-- slide 4--><img id="Pic4Res1" src="images/background/traveller-1149973_1920.jpg"> <img id="Pic4Res2" src="images/background/pexels-traveler_1360.jpg"> </div>
+        <div class="slide">
+          <!-- slide 5--><img id="Pic5Res1" src="images/background/pexels-photo-195280.jpeg"> <img id="Pic5Res2" src="images/background/pexels-jump_1360.jpg"> </div>
       </figure>
     </div>
     <div class="head_nav main_width container">
@@ -79,22 +42,36 @@
         </ul>
       </nav>
       <div class="account container_flex">
-        <a id="colorSi" href="#"><img id="prof_icon" src="images/icons/forum-user1.png"><span>Sing in</span></a>
+        <a id="colorSi" href="#"><img id="prof_icon" src="images/icons/forum-user1.png"><span>SING IN</span></a>
         <ul class="dropdown  container_flex">
           <li>
-            <a class="container_flex" href="#"><img id="profile_icon" src="images/SVG-icons/profile-icons.svg" alt="profile-icon"><p>Profile</p> </a>
+            <a class="container_flex" href="#"><img id="profile_icon" src="images/SVG-icons/profile-icons.svg" alt="profile-icon">
+              <p>Profile</p>
+            </a>
           </li>
           <li>
-            <a class="container_flex" href="#"><img src="images/SVG-icons/travels-icons.svg" alt="travel-icon"><p>Travels</p></a>
+            <a class="container_flex" href="#"><img src="images/SVG-icons/travels-icons.svg" alt="travel-icon">
+              <p>Travels</p>
+            </a>
           </li>
           <li>
-            <a class="container_flex" href="#"><img src="images/SVG-icons/settings-icons.svg" alt="settings-icon"><p>Settings</p></a>
+            <a class="container_flex" href="#"><img src="images/SVG-icons/settings-icons.svg" alt="settings-icon">
+              <p>Settings</p>
+            </a>
           </li>
           <li>
-            <a class="container_flex" href="#"><img src="images/SVG-icons/logout-icon.svg" alt="travel-icon"><p>Log Out</p></a>
+            <a class="container_flex" href="#"><img src="images/SVG-icons/logout-icon.svg" alt="travel-icon">
+              <p>Log Out</p>
+            </a>
           </li>
         </ul>
       </div>
+    </div>
+      <div class="mobile_nav  container_flex">
+        <div class="mobile_logo">Travendo</div>
+        <div class="hamburger_menu"></div>
+    </div>
+      
       <div class="inscription main_width container_flex">
         <p>Your place to be</p>
       </div>
@@ -103,8 +80,7 @@
         <div class="form-section container_flex">
           <!-- INPUT WHERE-->
           <div class="Where">
-            <input type="email" class="form-control" id="location" placeholder="Where ?"> 
-          </div>
+            <input type="email" class="form-control" id="location" placeholder="Where?"> </div>
           <!-- INPUT CHECK IN -->
           <div class="check_in">
             <div class="form-group container_flex">
@@ -145,7 +121,7 @@
       <div class="first_proposal">
         <div class="circle circl-img1">
           <div class="circl-info">
-            <h3>Live your dreams </h3>
+            <h3> Live your dreams</h3>
             <p><a href="javascript:void(0)" onclick="method()">Check out!</a></p>
           </div>
         </div>
@@ -192,111 +168,74 @@
       <figure class="effect-img"> <img src="images/places/dubrovnik-1_500.png" class="resp_pic">
         <figcaption>
           <h2>Croatia <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-        
-          <img src="images/places/barcelona-2_500.png" class="resp_pic"> 
-          
-          
-          
+      <figure class="effect-img"> <img src="images/places/barcelona-2_500.png" class="resp_pic">
         <figcaption>
           <h2>Spain <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-        
-          <img src="images/places/comino-3_500.png" class="resp_pic">
-          
-          
-          
+      <figure class="effect-img"> <img src="images/places/comino-3_500.png" class="resp_pic">
         <figcaption>
           <h2>Malta <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-         <img src="images/places/neuschwanstein-4_500.jpeg" class="resp_pic">
-         
-         
+      <figure class="effect-img"> <img src="images/places/neuschwanstein-4_500.jpeg" class="resp_pic">
         <figcaption>
           <h2>Germany <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img"> 
-       
-       <img src="images/places/prague-05_500.png" class="resp_pic">
-       
-       
+      <figure class="effect-img"> <img src="images/places/prague-05_500.png" class="resp_pic">
         <figcaption>
           <h2>Czech Republic <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img"> 
-       
-       <img src="images/places/stocholm-6_500.png" class="resp_pic">
-       
-       
+      <figure class="effect-img"> <img src="images/places/stocholm-6_500.png" class="resp_pic">
         <figcaption>
           <h2>Sweden <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-         <img src="images/places/budapest-7-500.png" class="resp_pic">
-         
-         
+      <figure class="effect-img"> <img src="images/places/budapest-7-500.png" class="resp_pic">
         <figcaption>
           <h2>Hungary <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-         <img src="images/places/singapore-8_500.png" class="resp_pic">
-         
-         
+      <figure class="effect-img"> <img src="images/places/singapore-8_500.png" class="resp_pic">
         <figcaption>
           <h2>Singapore <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-       
-         <img src="images/places/chiang-mai-500.png" class="resp_pic">
-         
-         
+      <figure class="effect-img"> <img src="images/places/chiang-mai-500.png" class="resp_pic">
         <figcaption>
           <h2>Philipines<span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-         <img src="images/places/maldives-10_500.png" class="resp_pic">
-         
-         
+      <figure class="effect-img"> <img src="images/places/maldives-10_500.png" class="resp_pic">
         <figcaption>
           <h2>USA <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img"> 
-       
-       <img src="images/places/vw-camper-11_500.png" class="resp_pic">
-       
-       
+      <figure class="effect-img"> <img src="images/places/vw-camper-11_500.png" class="resp_pic">
         <figcaption>
           <h2>Brazil <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
-      <figure class="effect-img">
-       
-         <img src="images/places/valencia-12_500.png" class="resp_pic">
-         
-         
+      <figure class="effect-img"> <img src="images/places/valencia-12_500.png" class="resp_pic">
         <figcaption>
           <h2>Spain <span></span></h2>
-          <p>It likes to appear out of thin air.</p> <!--<a href="#">View more</a>--> </figcaption>
+          <p>Beautiful place to visit.</p>
+          <!--<a href="#">View more</a>--></figcaption>
       </figure>
     </div>
   </section>
@@ -312,18 +251,13 @@
           <p class="text_mb1">Great experience by volunteer, creating a team with members from around the world!</p>
           <h3>Do you want to ?</h3>
           <ul>
-            <li>1.Experience the adventure
-            </li>
-            <li>2.Meet Great people
-            </li>
-            <li>3.Work with Travendo team
-            </li>
+            <li>1.Experience the adventure </li>
+            <li>2.Meet Great people </li>
+            <li>3.Work with Travendo team </li>
             <li>4.Spend your holidays in an unusual way</li>
-            <li>5.Acquire organizational skills
-            </li>
+            <li>5.Acquire organizational skills </li>
           </ul>
-          <p class="text_mb2">If you want more information - Click the button!
-          </p>
+          <p class="text_mb2">If you want more information - Click the button! </p>
           <button class="join_us"><a href="javascript:void(0)" onclick="method(); return false">Join us</a></button>
         </div>
         <div class="support_member flex_member member_text">
@@ -337,8 +271,7 @@
             <li>4.Paweł Loremipsum</li>
             <li>5.Piotrek Loremipsum</li>
           </ul>
-          <p class="text_mb2">Join us, if you feel that is what you are looking for!
-          </p>
+          <p class="text_mb2">Join us, if you feel that is what you are looking for! </p>
           <button class="join_us"><a href="javascript:void(0)" onclick="method(); return false">Join us</a></button>
         </div>
       </div>
@@ -396,6 +329,5 @@
   </footer>
 </body>
 <script src="JavaScript/JavaScript.js"></script>
-
 
 </html>
