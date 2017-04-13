@@ -33,6 +33,8 @@
   header .search .check_in,
   header .search .check_out,
   header .search .number_guests {
+    display: none; }
+  .airplane_icon {
     display: none; } }
 
 /*  850/768 x 576 Tablet */
