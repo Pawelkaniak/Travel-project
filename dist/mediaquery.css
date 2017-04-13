@@ -1,5 +1,41 @@
 /* 425 x  */
-/* 768 x 576 Tablet */
+@media only screen and (max-width: 426px) {
+  body .mobile_nav,
+  body .inscription,
+  body .search,
+  body .head_nav,
+  body .offers_explore,
+  body .footer_info,
+  body .membership,
+  body .terms_privacy {
+    font-size: 9px !important; }
+  .airplane_icon {
+    display: none; }
+  .background_member {
+    display: none; } }
+
+@media only screen and (max-width: 506px) {
+  .offers_explore .travel_offers figure.effect-img {
+    font-size: 12px !important; } }
+
+@media only screen and (max-width: 712px) {
+  header .mobile_nav {
+    display: flex; }
+  header .head_nav {
+    display: none; }
+  header .inscription p {
+    font-size: 3em; }
+  header .search {
+    padding-bottom: 12em;
+    font-size: 12px; }
+  header .search .Where .form-control {
+    width: 20em; }
+  header .search .check_in,
+  header .search .check_out,
+  header .search .number_guests {
+    display: none; } }
+
+/*  850/768 x 576 Tablet */
 @media only screen and (max-width: 850px) {
   .head_nav,
   .offers_explore,
@@ -13,10 +49,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
-  header .head_nav {
-    padding-bottom: 230px; }
   header .slider {
     display: none; }
+  .search {
+    padding-bottom: 12em;
+    font-size: 12px; }
   .offers_explore {
     margin-top: 0; }
   .offers_explore .travel_offers figure.effect-img {
@@ -24,18 +61,21 @@
   .landing_page {
     display: none; } }
 
+/* 950px */
 @media only screen and (max-width: 950px) {
   header {
     background-image: url(../images/background/ancient-1869218_1024.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
-  header .head_nav {
-    padding-bottom: 230px; }
   header .slider {
     display: none; }
+  header .search {
+    padding-bottom: 12em; }
   .landing_page {
     display: none !important; }
+  .offers_explore {
+    margin-top: 0px; }
   section .travel_offers figure.effect-img {
     font-size: 10px !important; } }
 
@@ -48,6 +88,7 @@
   .travel_offers figure.effect-img {
     font-size: 11px !important; } }
 
+/* 1176 */
 @media screen and (max-width: 1176px) {
   section .travel_offers figure.effect-img {
     font-size: 12px; } }
